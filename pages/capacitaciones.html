@@ -29,62 +29,67 @@
     <!--               ENCABEZADO                  -->
     <!-- ========================================= -->
 
-    <header class="container-fluid d-flex justify-content-center">
-      <p class="text-dark mb-0 p-2 fs-6">Contáctanos (351) 751549321</p>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark p-3 sticky-top" id="menu">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <span class="marca fs-5 fw-bold"> Ser Impersonal </span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Inicio</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="capacitaciones.html">Capacitaciones</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Nosotros</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="email"
-              placeholder="Email"
-              aria-label="email"
-            />
-            <button class="btn btn-nav" type="button">Suscribete</button>
-          </form>
-        </div>
+    <header class="sticky-top">
+      <div class="text-center bg-white">
+        <p class="text-dark mb-0 p-2 fs-6">Contáctanos (351) 751549321</p>
       </div>
-    </nav>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark p-3" id="menu">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <span class="marca fs-4 fw-bold"> Ser Impersonal </span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="capacitaciones.html"
+                    >Capacitaciones</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Nosotros</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+    
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="email"
+                  placeholder="Email"
+                  aria-label="email"
+                />
+                <button class="btn btn-nav" type="button">Suscribete</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
 
     <!-- ========================================= -->
     <!--                 PORTADA                   -->
@@ -102,14 +107,13 @@
               repellat, fugit recusandae soluta amet doloremque totam qui
               asperiores.
             </p>
-            <div class="botones">
-              <a href="contacto.html" class="btn1">Suscribite</a>
+            <div class="botones d-sm-flex flex-column">
+              <a href="contacto.html" class="btn1 mt-3">Suscribite</a>
               <a
                 href="https://open.spotify.com/user/31qkjnkquzhrmcrqx4543o4ux47y?si=2e2e5c70fb0d4b63"
                 target="_blank"
-                class="btn2"
-                >Escuchalo</a
-              >
+                class="btn2 mt-3"
+                >Escuchalo</a>
             </div>
           </div>
         </div>
@@ -133,7 +137,7 @@
     <!--               CONTENIDO                   -->
     <!-- ========================================= -->
     <section class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 g-4 w-75 mx-auto">
+      <div class="row row-cols-1 row-cols-md-2 g-4 w-100 mx-auto">
         <div class="col mb-5">
           <div class="card mx-auto">
             <img

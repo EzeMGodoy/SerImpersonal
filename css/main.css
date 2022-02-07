@@ -2,8 +2,11 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* overflow-x: hidden; */
   background-color: #f5f0ea;
+}
+
+a{
+  text-decoration: none;
 }
 /* ========================================== */
 /*                   MENU                     */
@@ -52,7 +55,7 @@ body {
 .banner .wrap {
   max-width: 1000px;
   margin: 0 auto;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
@@ -113,6 +116,34 @@ body {
   transform: scale(1.2);
 }
 
+
+.logo{
+  animation-name: aparecerDerecha;
+  animation-duration: 1.8s;
+  position: relative;
+  animation-timing-function: linear;
+  
+}
+
+
+@keyframes aparecerDerecha{
+  0%{
+    right: -100%;
+  }
+  25%{
+    right: -75%;
+  }
+  50%{
+    right: -50%;
+  }
+  75%{
+    right: -25%;
+  }
+  100%{
+    right: -0%;
+  }
+}
+
 /*-- ========================================= -- */
 /*--              CAPACITACIONES.HTML          --*/
 /*-- ========================================= --*/
@@ -133,7 +164,7 @@ body {
   flex-flow: row wrap;
 }
 
-.banner .wrap .box .botones .btn1 {
+.btn1 {
   flex-basis: 30%;
   border: 2px solid;
   border-radius: 20px;
@@ -144,7 +175,7 @@ body {
   color: #fff;
 }
 
-.banner .wrap .box .botones .btn2 {
+.btn2 {
   flex-basis: 30%;
   background-color: #fff;
   border: 2px solid #fff;
@@ -156,11 +187,11 @@ body {
   color: #000;
 }
 
-.banner .wrap .box .botones .btn1:hover {
+.btn1:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.banner .wrap .box .botones .btn2:hover {
+.btn2:hover {
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
 }
@@ -178,10 +209,11 @@ hr {
 .card {
   width: 70%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .btn {
@@ -192,6 +224,89 @@ hr {
 .page-link {
   color: #000;
 }
+
+
+/*-- ========================================= -- */
+/*--              BLOG.HTML                    --*/
+/*-- ========================================= --*/
+
+
+.destacadoBlog1{
+  animation-name: aparecer;
+  animation-duration: 1.8s;
+  position: relative;
+  animation-timing-function: linear;
+  
+}
+
+
+@keyframes aparecer{
+  0%{
+    left: -100%;
+  }
+  25%{
+    left: -75%;
+  }
+  50%{
+    left: -50%;
+  }
+  75%{
+    left: -25%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+
+
+
+.asideBlog{
+  background-color: rgb(66, 70, 66);
+}
+
+.asideBlog div img {
+  border-radius: 40%;
+  height: 10em;
+  width: 10em;
+  
+}
+
+
+ .boton1 {
+  flex-basis: 30%;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-right: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.boton2 {
+  flex-basis: 30%;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1.25rem;
+  padding: 10px 30px 10px 30px;
+  margin-right: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+} 
+
+.boton1:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.boton2:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+
 
 /*-- ========================================= -- */
 /*--                   ABOUT.HTML              --*/
@@ -241,6 +356,10 @@ hr {
   align-items: center;
 }
 
+.mapa{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 /*-- ========================================= --*/
 /*--                   FOOTER                  --*/
 /*-- ========================================= --*/
@@ -255,10 +374,11 @@ footer p {
   text-align: center;
 }
 
-#iconos i {
+.bi {
   font-size: 1.625rem;
   padding: 0 8px;
   color: #f3f3f3;
+
 }
 
 /*-- ========================================= -- */
