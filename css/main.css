@@ -8,6 +8,14 @@ body {
 a {
   text-decoration: none;
 }
+
+hr {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 /* ========================================== */
 /*                   MENU                     */
 /* ========================================== */
@@ -193,11 +201,7 @@ a {
   color: #fff;
 }
 
-hr {
-  width: 50%;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 
 #intro p {
   color: darkgreen;
@@ -221,6 +225,8 @@ hr {
 .page-link {
   color: #000;
 }
+
+
 
 /*-- ========================================= -- */
 /*--              BLOG.HTML                    --*/
@@ -403,6 +409,8 @@ footer p {
   .banner .wrap .box {
     padding-left: 30px;
   }
+
+
 }
 
 /*-- ========================================= -- */
@@ -487,6 +495,13 @@ footer p {
     font-size: 12px;
     line-height: 1.2;
   }
+
+  /* .banner .wrap .box .botones {
+    display: inline-block;
+    
+  } */
+
+
 
   .card {
     width: 100%;
