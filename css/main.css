@@ -5,7 +5,7 @@ body {
   background-color: #f5f0ea;
 }
 
-a{
+a {
   text-decoration: none;
 }
 /* ========================================== */
@@ -116,30 +116,27 @@ a{
   transform: scale(1.2);
 }
 
-
-.logo{
+.logo {
   animation-name: aparecerDerecha;
   animation-duration: 1.8s;
   position: relative;
   animation-timing-function: linear;
-  
 }
 
-
-@keyframes aparecerDerecha{
-  0%{
+@keyframes aparecerDerecha {
+  0% {
     right: -100%;
   }
-  25%{
+  25% {
     right: -75%;
   }
-  50%{
+  50% {
     right: -50%;
   }
-  75%{
+  75% {
     right: -25%;
   }
-  100%{
+  100% {
     right: -0%;
   }
 }
@@ -225,43 +222,36 @@ hr {
   color: #000;
 }
 
-
 /*-- ========================================= -- */
 /*--              BLOG.HTML                    --*/
 /*-- ========================================= --*/
 
-
-.destacadoBlog1{
+.destacadoBlog1 {
   animation-name: aparecer;
   animation-duration: 1.8s;
   position: relative;
   animation-timing-function: linear;
-  
 }
 
-
-@keyframes aparecer{
-  0%{
+@keyframes aparecer {
+  0% {
     left: -100%;
   }
-  25%{
+  25% {
     left: -75%;
   }
-  50%{
+  50% {
     left: -50%;
   }
-  75%{
+  75% {
     left: -25%;
   }
-  100%{
+  100% {
     left: 0%;
   }
 }
 
-
-
-
-.asideBlog{
+.asideBlog {
   background-color: rgb(66, 70, 66);
 }
 
@@ -269,11 +259,9 @@ hr {
   border-radius: 40%;
   height: 10em;
   width: 10em;
-  
 }
 
-
- .boton1 {
+.boton1 {
   flex-basis: 30%;
   border: 2px solid;
   border-radius: 20px;
@@ -294,7 +282,7 @@ hr {
   text-align: center;
   text-decoration: none;
   color: #000;
-} 
+}
 
 .boton1:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -305,8 +293,6 @@ hr {
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
 }
-
-
 
 /*-- ========================================= -- */
 /*--                   ABOUT.HTML              --*/
@@ -356,7 +342,7 @@ hr {
   align-items: center;
 }
 
-.mapa{
+.mapa {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -378,7 +364,6 @@ footer p {
   font-size: 1.625rem;
   padding: 0 8px;
   color: #f3f3f3;
-
 }
 
 /*-- ========================================= -- */
