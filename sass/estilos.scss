@@ -1,1 +1,5 @@
-@import "header";
+@import "components/variables";
+@import "components/mixins";
+@import "components/headerFooter";
+@import "base/index";
+@import "components/mediaqueries";

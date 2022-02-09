@@ -1,0 +1,105 @@
+@import "../components/variables";
+@import "../components/mixins";
+
+/*-- ========================================= -- */
+/*--               SLIDER DE IMAGENES          --*/
+/*-- ========================================= --*/
+
+section {
+  .carousel {
+    .carousel-inner {
+      max-height: 27rem;
+    }
+  }
+}
+
+/* ============================================= */
+/*                INDEX.HTML                     */
+/* ============================================= */
+
+section {
+  .bannerIndex {
+    @include bannerMedidas;
+    background-image: url(../img/bannerIndex.jpg);
+    // display: flex;
+    // max-width: 100%;
+    // height: $medida-banner;
+    // background-image: url(../img/bannerIndex.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+  }
+}
+
+#intro {
+  @media screen and (max-width: 768px) {
+    width: 90% !important;
+  }
+  h1 {
+    span {
+      color: $color_principal;
+    }
+  }
+  p {
+    span {
+      color: $color_principal;
+      animation-name: aparecerDerecha;
+      animation-duration: 1.8s;
+      position: relative;
+      animation-timing-function: linear;
+      @keyframes aparecerDerecha {
+        0% {
+          right: -100%;
+        }
+        25% {
+          right: -75%;
+        }
+        50% {
+          right: -50%;
+        }
+        75% {
+          right: -25%;
+        }
+        100% {
+          right: -0%;
+        }
+      }
+    }
+  }
+}
+
+section {
+  #equipo {
+    @media screen and (max-width: 768px) {
+      width: 90% !important;
+    }
+    p {
+      span {
+        color: $color_principal;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  .capacitaciones-columna {
+    @media screen and (max-width: 768px) {
+      width: 100% !important;
+      // text-align: left;
+    }
+    .carta {
+      @media screen and (max-width: 576px) {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        text-align: center;
+      }
+      a {
+        img {
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

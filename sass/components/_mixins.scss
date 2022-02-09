@@ -1,0 +1,8 @@
+@mixin bannerMedidas {
+  display: flex;
+  max-width: 100%;
+  height: $medida-banner;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
