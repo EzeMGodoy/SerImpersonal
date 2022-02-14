@@ -103,6 +103,12 @@
 @media screen and (max-width: 320px) {
   /* CAPACITACIONES */
 
+  section{
+    .bannerCapacitaciones {
+      background-position: 60% 60%;
+    }
+  }
+
   section {
     .banner {
       .wrap {
@@ -131,7 +137,13 @@
     }
   }
 
-  // .card {
-  //   width: 100%;
-  // }
+  .container-fluid {
+    .row {
+      .col {
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

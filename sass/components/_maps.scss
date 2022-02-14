@@ -1,0 +1,39 @@
+/*    MAPAS      */
+
+
+$botones: (
+  color-btn: white,
+  background-color-btn: rgb(12, 85, 12),
+  font-size-email: 1.125rem,
+  font-weight-email: bold,
+);
+
+
+
+form {
+  .btn {
+    color: map-get($map: $botones, $key: color-btn);
+    background-color: map-get($map: $botones, $key: background-color-btn);
+    font-size: map-get($map: $botones, $key: font-size-email);
+    font-weight: map-get($map: $botones, $key: font-weight-email);
+    &:hover{
+      background-color: $color_principal;
+    }
+  }
+}
+
+.container-fluid {
+  .row {
+    .col {
+      div {
+        .btn {
+          color: map-get($map: $botones, $key: color-btn);
+          background-color: map-get($map: $botones, $key: background-color-btn);
+          &:hover{
+            background-color: $color_principal;
+          }
+        }
+      }
+    }
+  }
+}

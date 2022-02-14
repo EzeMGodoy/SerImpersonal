@@ -1,6 +1,6 @@
 @import "../components/variables";
 @import "../components/mixins";
-
+@import "../components/extends";
 /*-- ========================================= -- */
 /*--               SLIDER DE IMAGENES          --*/
 /*-- ========================================= --*/
@@ -21,13 +21,7 @@ section {
   .bannerIndex {
     @include bannerMedidas;
     background-image: url(../img/bannerIndex.jpg);
-    // display: flex;
-    // max-width: 100%;
-    // height: $medida-banner;
-    // background-image: url(../img/bannerIndex.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
+ 
   }
 }
 
@@ -35,14 +29,9 @@ section {
   @media screen and (max-width: 768px) {
     width: 90% !important;
   }
-  h1 {
-    span {
-      color: $color_principal;
-    }
-  }
+
   p {
     span {
-      color: $color_principal;
       animation-name: aparecerDerecha;
       animation-duration: 1.8s;
       position: relative;
@@ -73,11 +62,7 @@ section {
     @media screen and (max-width: 768px) {
       width: 90% !important;
     }
-    p {
-      span {
-        color: $color_principal;
-      }
-    }
+   
   }
 }
 
@@ -88,6 +73,18 @@ section {
       // text-align: left;
     }
     .carta {
+      .mt-4{
+        a{
+          div{
+            button{
+              @include btn-seguirleyendo;
+              &:hover{
+                background-color: $background-botones;
+              }
+            }
+          }
+        }
+      }
       @media screen and (max-width: 576px) {
         flex-wrap: wrap;
         justify-content: center !important;
@@ -95,9 +92,7 @@ section {
       }
       a {
         img {
-          &:hover {
-            transform: scale(1.2);
-          }
+          @include cartaEfecto
         }
       }
     }

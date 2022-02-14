@@ -1,3 +1,29 @@
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold; }
+  form .btn:hover {
+    background-color: green; }
+
+.container-fluid .row .col div .btn {
+  color: white;
+  background-color: #0c550c; }
+  .container-fluid .row .col div .btn:hover {
+    background-color: green; }
+
+/*     EXTENDS  */
+section .bannerCapacitaciones .wrap .botones .btn1, section .bannerCapacitaciones .wrap .botones .btn2 {
+  flex-basis: 30%;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  /* margin-right: 1.25rem; */ }
+
 /* ===== GLOBALES ===== */
 body {
   font-family: "Montserrat", sans-serif;
@@ -10,6 +36,9 @@ hr {
   width: 50%;
   margin-right: auto;
   margin-left: auto; }
+
+span {
+  color: green; }
 
 /* ========================================== */
 /*                   MENU                     */
@@ -24,10 +53,6 @@ header .navbar {
     color: #244d24; }
     header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
       color: white; }
-  header .navbar .container-fluid .collapse form .btn-nav {
-    font-size: 1.125rem;
-    font-weight: bold;
-    background-color: #778577; }
 
 /*-- ========================================= -- */
 /*--               BANNER                      --*/
@@ -71,6 +96,17 @@ footer {
     padding: 0 8px;
     color: #f3f3f3; }
 
+/*     EXTENDS  */
+section .bannerCapacitaciones .wrap .botones .btn1, section .bannerCapacitaciones .wrap .botones .btn2 {
+  flex-basis: 30%;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  /* margin-right: 1.25rem; */ }
+
 /*-- ========================================= -- */
 /*--               SLIDER DE IMAGENES          --*/
 /*-- ========================================= --*/
@@ -93,11 +129,7 @@ section .bannerIndex {
   #intro {
     width: 90% !important; } }
 
-#intro h1 span {
-  color: green; }
-
 #intro p span {
-  color: green;
   animation-name: aparecerDerecha;
   animation-duration: 1.8s;
   position: relative;
@@ -119,12 +151,15 @@ section .bannerIndex {
   section #equipo {
     width: 90% !important; } }
 
-section #equipo p span {
-  color: green; }
-
 @media screen and (max-width: 768px) {
   .container-fluid .capacitaciones-columna {
     width: 100% !important; } }
+
+.container-fluid .capacitaciones-columna .carta .mt-4 a div button {
+  color: white;
+  background-color: #327e32; }
+  .container-fluid .capacitaciones-columna .carta .mt-4 a div button:hover {
+    background-color: #26a726; }
 
 @media screen and (max-width: 576px) {
   .container-fluid .capacitaciones-columna .carta {
@@ -132,8 +167,71 @@ section #equipo p span {
     justify-content: center !important;
     text-align: center; } }
 
-.container-fluid .capacitaciones-columna .carta a img:hover {
-  transform: scale(1.2); }
+.container-fluid .capacitaciones-columna .carta a img {
+  transition: 0.2s; }
+  .container-fluid .capacitaciones-columna .carta a img:hover {
+    transform: scale(1.07); }
+
+/*     EXTENDS  */
+section .bannerCapacitaciones .wrap .botones .btn1, section .bannerCapacitaciones .wrap .botones .btn2 {
+  flex-basis: 30%;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  /* margin-right: 1.25rem; */ }
+
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold; }
+  form .btn:hover {
+    background-color: green; }
+
+.container-fluid .row .col div .btn {
+  color: white;
+  background-color: #0c550c; }
+  .container-fluid .row .col div .btn:hover {
+    background-color: green; }
+
+/*-- ========================================= -- */
+/*--              CAPACITACIONES.HTML          --*/
+/*-- ========================================= --*/
+section .bannerCapacitaciones {
+  display: flex;
+  max-width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bannerCapacitaciones1.jpg); }
+  section .bannerCapacitaciones .wrap .botones {
+    display: flex;
+    margin-top: 1.875rem;
+    flex-flow: row wrap; }
+    section .bannerCapacitaciones .wrap .botones .btn1:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+    section .bannerCapacitaciones .wrap .botones .btn2 {
+      border: 2px solid #fff;
+      color: #000;
+      background-color: #fff; }
+      section .bannerCapacitaciones .wrap .botones .btn2:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #fff; }
+
+.container-fluid .row .col .card {
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s; }
+  .container-fluid .row .col .card:hover {
+    transform: scale(1.02); }
+
+section .Page .pagination page-item .page-link {
+  color: #000; }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XL       --*/
@@ -178,6 +276,8 @@ section #equipo p span {
 /*-- ========================================= --*/
 @media screen and (max-width: 320px) {
   /* CAPACITACIONES */
+  section .bannerCapacitaciones {
+    background-position: 60% 60%; }
   section .banner .wrap .box {
     flex-basis: 100%;
     color: #fff;
@@ -194,4 +294,6 @@ section #equipo p span {
       padding-bottom: 10px; }
     section .banner .wrap .box p {
       font-size: 12px;
-      line-height: 1.2; } }
+      line-height: 1.2; }
+  .container-fluid .row .col .card {
+    width: 100%; } }
