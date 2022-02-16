@@ -1,0 +1,100 @@
+@import "../components/variables";
+@import "../components/mixins";
+@import "../components/extends";
+@import "../components/maps";
+
+/*-- ========================================= -- */
+/*--              BLOG.HTML                    --*/
+/*-- ========================================= --*/
+
+.contenedorBlog {
+ @extend %contenedorBlog;
+  .portada{
+   .bannerAbout{
+     @include bannerMedidas;
+     background-image: url(../../img/portadaNosotros.jpg);
+   }
+ }
+ #intro{
+   grid-area: zona1;
+ }
+ .contenidoBlog{
+   grid-area: destacado;
+   .asideBlog{
+     grid-area: aside;
+   }
+ }
+}
+
+.container-fluid {
+  .destacadoBlog1 {
+    animation-name: aparecer;
+    animation-duration: 1.8s;
+    position: relative;
+    animation-timing-function: linear;
+    @keyframes aparecer {
+      0% {
+        left: -100%;
+      }
+      25% {
+        left: -75%;
+      }
+      50% {
+        left: -50%;
+      }
+      75% {
+        left: -25%;
+      }
+      100% {
+        left: 0%;
+      }
+    }
+    section {
+      .card {
+        @extend %tarjetas;
+      }
+    }
+  }
+}
+
+.row {
+  div {
+    .card {
+      @extend %tarjetas;
+    }
+  }
+}
+
+.asideBlog {
+  background-color: rgb(66, 70, 66);
+  aside {
+    .col {
+      img {
+        border-radius: 40%;
+        height: 10em;
+        width: 10em;
+      }
+    }
+    .col-12 {
+      .botones {
+        .boton1 {
+          @extend %botonesPodcast;
+          color: #fff;
+          margin-right: 1.25rem;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+        }
+        .boton2 {
+          @extend %botonesPodcast;
+          color: #000;
+          background-color: #fff;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

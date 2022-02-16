@@ -1,0 +1,22 @@
+@import "../components/variables";
+@import "../components/mixins";
+@import "../components/extends";
+@import "../components/maps";
+
+/*-- ========================================= -- */
+/*--                   ABOUT.HTML              --*/
+/*-- ========================================= --*/
+
+.contenedorAbout {
+  @extend %contenedorAbout;
+  .portada{
+    grid-area: portada;
+    .bannerAbout {
+      @include bannerMedidas;
+      background-image: url(../../img/portadaNosotros.jpg);
+    }
+  }
+ 
+}
+
+

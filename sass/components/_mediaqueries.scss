@@ -9,16 +9,24 @@
     }
   }
 
-  //   #local {
-  //     flex-wrap: wrap;
-  //     padding-top: 30px;
-  //   }
+  /* Contacto.html  */
 
-  //   .wrapper {
-  //     width: 90%;
-  //     margin: auto;
-  //     padding-top: 50px;
-  //   }
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+    .wrapper {
+      width: 90%;
+      margin: auto;
+      padding-top: 50px;
+    }
+  }
+
+  // BLOG
+  .container-fluid {
+    .destacadoBLog1 {
+      height: 40%;
+    }
+  }
 }
 
 /*-- ========================================= -- */
@@ -44,31 +52,52 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 768px) {
-  #intro,
-  #equipo {
-    width: 90% !important;
-  }
-
-  // .about-description {
-  //   display: none;
-  // }
-
-  section {
-    .capacitaciones-columna {
-      width: 100% !important;
-      text-align: center;
+  .contenedorIndex {
+    font-size: 15px;
+    .destacado {
+      .capacitacionesColumna {
+        width: 85%;
+        text-align: start;
+        .carta {
+          .capacitacionesTexto {
+            .capacitacionesTitulo {
+              font-size: 22px;
+            }
+          }
+          .capacitacionesBoton {
+            display: none;
+          }
+        }
+      }
     }
   }
 
-  // #bg-contacto {
-  //   top: -110px;
-  // }
+  .contenedorCapacitaciones {
+    section {
+      .bannerCapacitaciones {
+        .wrap {
+          .box {
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
 
-  /* CONTACTO */
-
-  // .banner {
-  //   background-position: center;
-  // }
+.contenedorContacto {
+  #local {
+    flex-direction: column-reverse;
+    .wrapper {
+      .ubicacion,
+      .ubicacionTexto {
+        text-align: center;
+      }
+    }
+  }
+  .formulario {
+    width: 90%;
+  }
 }
 
 /*-- ========================================= -- */
@@ -76,24 +105,49 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 576px) {
-  section {
-    .capacitaciones-columna {
-      .carta {
-        flex-wrap: wrap;
-        justify-content: center !important;
+  // INDEX.HTML
+  .contenedorIndex {
+    .destacado {
+      div {
+        .destacadoTitulo {
+          font-size: 25px;
+        }
+      }
+      .capacitacionesColumna {
+        width: 85%;
+        text-align: center;
+        .carta {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .capacitacionesTexto {
+            .capacitacionesTitulo {
+              font-size: 22px;
+              padding-top: 10px;
+            }
+            .capacitacionesBoton {
+              justify-content: center;
+            }
+          }
+        }
       }
     }
   }
 
   /* CAPACITACIONES */
-
-  // .bannerCapacitaciones {
-  //   background-position: 60% 60%;
-  // }
-
-  // .banner .wrap .box .botones {
-  //   flex-flow: nowrap;
-  // }
+  .contenedorCapacitaciones {
+    section {
+      .bannerCapacitaciones {
+        .wrap {
+          .box {
+            width: 90%;
+            padding-left: 50px;
+            padding-top: 50px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*-- ========================================= -- */
@@ -101,49 +155,130 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 320px) {
+  // index.html
+
+  .contenedorIndex {
+    .portada {
+      .bannerIndex {
+        .wrap {
+          .box {
+            h1 {
+              font-size: 25px;
+              display: inline-block;
+              // modificar la letra para que quede bien
+            }
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .zona1 {
+      .csb {
+        font-size: 18px;
+        .tecnicas {
+          font-size: 16px;
+        }
+      }
+      .terapeutas {
+        font-size: 16px;
+      }
+    }
+    .zona2 {
+      #equipo {
+        .equipoTitulo {
+          font-size: 18px;
+        }
+        .equipoDescripcion {
+          display: none;
+        }
+        .equipoMobile {
+          text-align: center;
+        }
+      }
+    }
+    .destacado {
+      div {
+        .destacadoTitulo {
+          font-size: 23px;
+        }
+      }
+      .capacitacionesColumna {
+        .carta {
+          .capacitacionesTexto {
+            .capacitacionesTitulo {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   /* CAPACITACIONES */
 
-  section{
-    .bannerCapacitaciones {
-      background-position: 60% 60%;
+  .contenedorCapacitaciones {
+    section {
+      .bannerCapacitaciones {
+        background-position: 60% 60%;
+      }
     }
-  }
 
-  section {
-    .banner {
-      .wrap {
-        .box {
-          flex-basis: 100%;
-          color: #fff;
-          text-align: left;
-          align-self: center;
-          span {
-            font-size: 15px;
-            letter-spacing: 2px;
-            font-weight: 300;
-            color: white;
-          }
-          h1 {
-            font-size: 20px;
-            line-height: 0.9;
-            padding-bottom: 10px;
-          }
-          p {
-            font-size: 12px;
-            line-height: 1.2;
+    section {
+      .banner {
+        .wrap {
+          .box {
+            flex-basis: 100%;
+            color: #fff;
+            text-align: left;
+            align-self: center;
+            span {
+              font-size: 15px;
+              letter-spacing: 2px;
+              font-weight: 300;
+              color: white;
+            }
+            h1 {
+              font-size: 20px;
+              line-height: 0.9;
+              padding-bottom: 10px;
+            }
+            p {
+              font-size: 12px;
+              line-height: 1.2;
+            }
           }
         }
       }
     }
   }
 
-  .container-fluid {
-    .row {
-      .col {
-        .card {
-          width: 100%;
+  /* CONTACTO.HTML */
+
+  .contenedorContacto {
+    .portada {
+      .bannerContacto {
+        .wrap {
+          .box {
+            span{
+              color: #fff;
+            }
+            .textoBanner {
+              display: none;
+            }
+          }
         }
       }
     }
+  }
+
+   // FOOTER
+
+   footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 }

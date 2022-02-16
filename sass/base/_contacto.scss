@@ -1,0 +1,37 @@
+@import "../components/variables";
+@import "../components/mixins";
+@import "../components/extends";
+@import "../components/maps";
+
+/*-- ========================================= -- */
+/*--              CONTACTO.HTML          --*/
+/*-- ========================================= --*/
+
+.contenedorContacto {
+  @extend %contenedorContacto;
+  .portada {
+    .bannerContacto {
+      @include bannerMedidas;
+      background-image: url(../../img/laSerranita.jpg);
+    }
+  }
+  #local {
+    grid-area: zona1;
+    // background-color: #f7f2ec;
+    padding-bottom: 1.875rem;
+    align-items: center;
+    
+    .mapa {
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .wrapper {
+      padding-left: 20px;
+    }
+  }
+  .formulario {
+    grid-area: formulario;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+

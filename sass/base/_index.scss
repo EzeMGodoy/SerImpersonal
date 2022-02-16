@@ -1,56 +1,132 @@
 @import "../components/variables";
 @import "../components/mixins";
 @import "../components/extends";
-/*-- ========================================= -- */
-/*--               SLIDER DE IMAGENES          --*/
-/*-- ========================================= --*/
+@import "../components/maps";
 
-section {
-  .carousel {
-    .carousel-inner {
-      max-height: 27rem;
-    }
-  }
-}
 
 /* ============================================= */
 /*                INDEX.HTML                     */
 /* ============================================= */
 
-section {
-  .bannerIndex {
-    @include bannerMedidas;
-    background-image: url(../img/bannerIndex.jpg);
- 
+.contenedorIndex {
+  @extend %contenedorIndex;
+  .portada {
+    .bannerIndex {
+      @include bannerMedidas;
+      background-image: url(../img/bannerIndex.jpg);
+    }
   }
-}
-
-#intro {
-  @media screen and (max-width: 768px) {
-    width: 90% !important;
+  .zona1 {
+    grid-area: zona1;
+    display: grid;
+    place-content: center;
+    padding-top: 1.25rem;
+    .csb {
+      text-align: center;
+      padding: 0.625rem;
+      font-size: 2rem;
+      .tecnicas {
+        font-size: 1.25rem;
+      }
+    }
+    .terapeutas {
+      text-align: center;
+      padding: 0.625rem;
+      font-size: 1.5rem;
+      .logo {
+        animation-name: aparecerDerecha;
+        animation-duration: 1.8s;
+        position: relative;
+        animation-timing-function: linear;
+        @keyframes aparecerDerecha {
+          0% {
+            right: -100%;
+          }
+          25% {
+            right: -75%;
+          }
+          50% {
+            right: -50%;
+          }
+          75% {
+            right: -25%;
+          }
+          100% {
+            right: -0%;
+          }
+        }
+      }
+    }
   }
-
-  p {
-    span {
-      animation-name: aparecerDerecha;
-      animation-duration: 1.8s;
-      position: relative;
-      animation-timing-function: linear;
-      @keyframes aparecerDerecha {
-        0% {
-          right: -100%;
+  .zona2 {
+    grid-area: zona2;
+    display: grid;
+    place-content: center;
+    #equipo {
+      width: 75%;
+      margin: auto;
+      .equipoTitulo {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.75rem;
+        font-weight: bold;
+      }
+      .equipoDescripcion {
+        text-align: center;
+      }
+    }
+  }
+  .slider {
+    grid-area: slider;
+    .carousel {
+      .carousel-inner {
+        max-height: 27rem;
+      }
+    }
+  }
+  .destacado {
+    grid-area: destacado;
+    div {
+      .destacadoTitulo {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 0.9375rem;
+      }
+    }
+    .capacitacionesColumna {
+      width: 75%;
+      margin: auto;
+      .carta {
+        margin: 0.9375rem 0 2.1875rem;
+        display: flex;
+        a {
+          .imagenCapacitacion {
+            border-radius: 5px;
+            margin: auto 0;
+            &:hover {
+              transform: scale(1.07);
+              transition: 1s;
+            }
+          }
         }
-        25% {
-          right: -75%;
+        .capacitacionesTexto {
+          padding: 0 15px;
         }
-        50% {
-          right: -50%;
+        .capacitacionesTitulo {
+          font-size: 1.5625rem;
         }
-        75% {
-          right: -25%;
-        }
-        100% {
-          right: -0%;
+        .capacitacionesBoton {
+          display: flex;
+          justify-content:flex-end;
+          align-content: center;
+          text-align: center;
+          .botonSeguir {
+            @include btn-seguirleyendo;
+            width: fit-content;
+            &:hover {
+              background-color: $background-botones;
+            }
+          }
         }
       }
     }
@@ -62,7 +138,6 @@ section {
     @media screen and (max-width: 768px) {
       width: 90% !important;
     }
-   
   }
 }
 
@@ -73,12 +148,12 @@ section {
       // text-align: left;
     }
     .carta {
-      .mt-4{
-        a{
-          div{
-            button{
+      .mt-4 {
+        a {
+          div {
+            button {
               @include btn-seguirleyendo;
-              &:hover{
+              &:hover {
                 background-color: $background-botones;
               }
             }
@@ -92,7 +167,7 @@ section {
       }
       a {
         img {
-          @include cartaEfecto
+          @include cartaEfecto;
         }
       }
     }

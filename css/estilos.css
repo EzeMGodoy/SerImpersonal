@@ -14,15 +14,48 @@ form .btn {
     background-color: green; }
 
 /*     EXTENDS  */
-section .bannerCapacitaciones .wrap .botones .btn1, section .bannerCapacitaciones .wrap .botones .btn2 {
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer"; }
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
+
+.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
-  border: 2px solid;
+  border: 2px solid #fff;
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  /* margin-right: 1.25rem; */ }
+  text-align: center; }
+
+.container-fluid .destacadoBlog1 section .card, .row div .card {
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s; }
+  .container-fluid .destacadoBlog1 section .card:hover, .row div .card:hover {
+    transform: scale(1.02); }
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer"; }
+
+.contenedorAbout {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
+
+.contenedorContacto {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /* ===== GLOBALES ===== */
 body {
@@ -30,7 +63,10 @@ body {
   background-color: #f5f0ea; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    color: #000; }
 
 hr {
   width: 50%;
@@ -43,80 +79,132 @@ span {
 /* ========================================== */
 /*                   MENU                     */
 /* ========================================== */
-header .navbar {
-  background-color: #b7c3ad; }
-  header .navbar .container-fluid .navbar-brand .marca {
-    color: #243a24; }
-  header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: #244d24; }
-    header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
-      color: white; }
+header {
+  grid-area: header; }
+  header .navbar {
+    background-color: #b7c3ad; }
+    header .navbar .container-fluid .navbar-brand .marca {
+      color: #243a24; }
+    header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: #244d24; }
+      header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
+        color: white; }
 
 /*-- ========================================= -- */
 /*--               BANNER                      --*/
 /*-- ========================================= --*/
-section .banner .wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  height: 90%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: left; }
-  section .banner .wrap .box {
-    flex-basis: 50%;
-    color: #fff;
-    text-align: left;
-    align-self: center; }
-    section .banner .wrap .box span {
-      font-size: 1.125rem;
-      letter-spacing: 2px;
-      font-weight: 300;
-      color: #c1c5c1; }
-    section .banner .wrap .box h1 {
-      font-size: 2rem;
-      line-height: 0.9;
-      padding-bottom: 10px; }
-    section .banner .wrap .box p {
-      font-size: 0.9375rem;
-      line-height: 1.2; }
+.portada {
+  grid-area: portada; }
+  .portada .banner .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left; }
+    .portada .banner .wrap .box {
+      flex-basis: 50%;
+      color: #fff;
+      text-align: left;
+      align-self: center; }
+      .portada .banner .wrap .box span {
+        font-size: 1.125rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #c1c5c1; }
+      .portada .banner .wrap .box h1 {
+        font-size: 2rem;
+        line-height: 0.9;
+        padding-bottom: 10px; }
+      .portada .banner .wrap .box p {
+        font-size: 0.9375rem;
+        line-height: 1.2; }
 
 /*-- ========================================= --*/
 /*--                   FOOTER                  --*/
 /*-- ========================================= --*/
 footer {
+  grid-area: footer;
   background: #b7c3ad;
-  min-height: 6.25rem; }
-  footer p {
+  min-height: 6.25rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  footer .derechos {
     color: #f3f3f3;
-    text-align: center; }
+    text-align: center;
+    padding: 10px 10px 0; }
   footer #iconos a .bi {
     font-size: 1.625rem;
     padding: 0 8px;
     color: #f3f3f3; }
 
 /*     EXTENDS  */
-section .bannerCapacitaciones .wrap .botones .btn1, section .bannerCapacitaciones .wrap .botones .btn2 {
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer"; }
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
+
+.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
-  border: 2px solid;
+  border: 2px solid #fff;
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  /* margin-right: 1.25rem; */ }
+  text-align: center; }
 
-/*-- ========================================= -- */
-/*--               SLIDER DE IMAGENES          --*/
-/*-- ========================================= --*/
-section .carousel .carousel-inner {
-  max-height: 27rem; }
+.container-fluid .destacadoBlog1 section .card, .row div .card {
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s; }
+  .container-fluid .destacadoBlog1 section .card:hover, .row div .card:hover {
+    transform: scale(1.02); }
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer"; }
+
+.contenedorAbout {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
+
+.contenedorContacto {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold; }
+  form .btn:hover {
+    background-color: green; }
+
+.container-fluid .row .col div .btn {
+  color: white;
+  background-color: #0c550c; }
+  .container-fluid .row .col div .btn:hover {
+    background-color: green; }
 
 /* ============================================= */
 /*                INDEX.HTML                     */
 /* ============================================= */
-section .bannerIndex {
+.contenedorIndex .portada .bannerIndex {
   display: flex;
   max-width: 100%;
   height: 60vh;
@@ -125,15 +213,26 @@ section .bannerIndex {
   background-position: center;
   background-image: url(../img/bannerIndex.jpg); }
 
-@media screen and (max-width: 768px) {
-  #intro {
-    width: 90% !important; } }
-
-#intro p span {
-  animation-name: aparecerDerecha;
-  animation-duration: 1.8s;
-  position: relative;
-  animation-timing-function: linear; }
+.contenedorIndex .zona1 {
+  grid-area: zona1;
+  display: grid;
+  place-content: center;
+  padding-top: 1.25rem; }
+  .contenedorIndex .zona1 .csb {
+    text-align: center;
+    padding: 0.625rem;
+    font-size: 2rem; }
+    .contenedorIndex .zona1 .csb .tecnicas {
+      font-size: 1.25rem; }
+  .contenedorIndex .zona1 .terapeutas {
+    text-align: center;
+    padding: 0.625rem;
+    font-size: 1.5rem; }
+    .contenedorIndex .zona1 .terapeutas .logo {
+      animation-name: aparecerDerecha;
+      animation-duration: 1.8s;
+      position: relative;
+      animation-timing-function: linear; }
 
 @keyframes aparecerDerecha {
   0% {
@@ -147,6 +246,64 @@ section .bannerIndex {
   100% {
     right: -0%; } }
 
+.contenedorIndex .zona2 {
+  grid-area: zona2;
+  display: grid;
+  place-content: center; }
+  .contenedorIndex .zona2 #equipo {
+    width: 75%;
+    margin: auto; }
+    .contenedorIndex .zona2 #equipo .equipoTitulo {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 1.75rem;
+      font-weight: bold; }
+    .contenedorIndex .zona2 #equipo .equipoDescripcion {
+      text-align: center; }
+
+.contenedorIndex .slider {
+  grid-area: slider; }
+  .contenedorIndex .slider .carousel .carousel-inner {
+    max-height: 27rem; }
+
+.contenedorIndex .destacado {
+  grid-area: destacado; }
+  .contenedorIndex .destacado div .destacadoTitulo {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 0.9375rem; }
+  .contenedorIndex .destacado .capacitacionesColumna {
+    width: 75%;
+    margin: auto; }
+    .contenedorIndex .destacado .capacitacionesColumna .carta {
+      margin: 0.9375rem 0 2.1875rem;
+      display: flex; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta a .imagenCapacitacion {
+        border-radius: 5px;
+        margin: auto 0; }
+        .contenedorIndex .destacado .capacitacionesColumna .carta a .imagenCapacitacion:hover {
+          transform: scale(1.07);
+          transition: 1s; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto {
+        padding: 0 15px; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTitulo {
+        font-size: 1.5625rem; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesBoton {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        text-align: center; }
+        .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesBoton .botonSeguir {
+          color: white;
+          background-color: #327e32;
+          display: inline-block;
+          padding: 10px 15px;
+          width: 30%;
+          border-radius: 3px;
+          width: fit-content; }
+          .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesBoton .botonSeguir:hover {
+            background-color: #5a945a; }
+
 @media screen and (max-width: 768px) {
   section #equipo {
     width: 90% !important; } }
@@ -157,9 +314,13 @@ section .bannerIndex {
 
 .container-fluid .capacitaciones-columna .carta .mt-4 a div button {
   color: white;
-  background-color: #327e32; }
+  background-color: #327e32;
+  display: inline-block;
+  padding: 10px 15px;
+  width: 30%;
+  border-radius: 3px; }
   .container-fluid .capacitaciones-columna .carta .mt-4 a div button:hover {
-    background-color: #26a726; }
+    background-color: #5a945a; }
 
 @media screen and (max-width: 576px) {
   .container-fluid .capacitaciones-columna .carta {
@@ -170,18 +331,51 @@ section .bannerIndex {
 .container-fluid .capacitaciones-columna .carta a img {
   transition: 0.2s; }
   .container-fluid .capacitaciones-columna .carta a img:hover {
-    transform: scale(1.07); }
+    transform: scale(1.08); }
 
 /*     EXTENDS  */
-section .bannerCapacitaciones .wrap .botones .btn1, section .bannerCapacitaciones .wrap .botones .btn2 {
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer"; }
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
+
+.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
-  border: 2px solid;
+  border: 2px solid #fff;
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  /* margin-right: 1.25rem; */ }
+  text-align: center; }
+
+.container-fluid .destacadoBlog1 section .card, .row div .card {
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s; }
+  .container-fluid .destacadoBlog1 section .card:hover, .row div .card:hover {
+    transform: scale(1.02); }
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer"; }
+
+.contenedorAbout {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
+
+.contenedorContacto {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /*    MAPAS      */
 form .btn {
@@ -201,44 +395,383 @@ form .btn {
 /*-- ========================================= -- */
 /*--              CAPACITACIONES.HTML          --*/
 /*-- ========================================= --*/
-section .bannerCapacitaciones {
+.contenedorCapacitaciones section {
+  grid-area: portada; }
+  .contenedorCapacitaciones section .bannerCapacitaciones {
+    display: flex;
+    max-width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/bannerCapacitaciones1.jpg); }
+    .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
+      color: #fff;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px; }
+      .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .nuestro {
+        font-size: 1.5rem; }
+      .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones {
+        display: flex;
+        margin-top: 7px;
+        flex-flow: row wrap;
+        gap: 5px;
+        width: fit-content; }
+        .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1:hover {
+          background-color: rgba(255, 255, 255, 0.3); }
+        .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2 {
+          border: 2px solid #000;
+          color: #000;
+          background-color: #fff; }
+          .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff; }
+
+.contenedorCapacitaciones #intro {
+  grid-area: zona1;
+  margin: 0 auto;
+  padding-top: 20px; }
+  .contenedorCapacitaciones #intro .tituloIntro {
+    text-align: center;
+    font-size: 2rem; }
+  .contenedorCapacitaciones #intro .textoIntro {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px; }
+
+.contenedorCapacitaciones .contenidoCapacitaciones {
+  grid-area: contenidoCursos;
+  margin: 0 auto;
+  width: 90%;
+  padding: 60px 0;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3.5em;
+  flex-wrap: wrap; }
+  .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem {
+    padding-bottom: 3em;
+    flex-basis: 280px;
+    max-width: 450px;
+    flex-grow: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px; }
+    .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem .tarjetaContenido {
+      width: 90%;
+      margin: 0 auto; }
+      .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem .tarjetaContenido .tarjetaImagen {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 2em; }
+        .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem .tarjetaContenido .tarjetaImagen .tarjetaImg {
+          width: 100%;
+          border-radius: 10px; }
+          .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem .tarjetaContenido .tarjetaImagen .tarjetaImg:hover {
+            transform: scale(1.05);
+            transition: 1s; }
+      .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem .tarjetaContenido .tarjetaTexto .tarjetaTitulo {
+        margin-bottom: 1em; }
+      .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem .tarjetaContenido .capacitacionesBoton {
+        width: fit-content;
+        border-radius: 5px;
+        padding: 7px 12px;
+        background-color: #4f774f; }
+        .contenedorCapacitaciones .contenidoCapacitaciones .tarjetaItem .tarjetaContenido .capacitacionesBoton a {
+          color: #fff; }
+
+/*     EXTENDS  */
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer"; }
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
+
+.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+  flex-basis: 30%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center; }
+
+.container-fluid .destacadoBlog1 section .card, .row div .card {
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s; }
+  .container-fluid .destacadoBlog1 section .card:hover, .row div .card:hover {
+    transform: scale(1.02); }
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer"; }
+
+.contenedorAbout {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
+
+.contenedorContacto {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold; }
+  form .btn:hover {
+    background-color: green; }
+
+.container-fluid .row .col div .btn {
+  color: white;
+  background-color: #0c550c; }
+  .container-fluid .row .col div .btn:hover {
+    background-color: green; }
+
+/*-- ========================================= -- */
+/*--              BLOG.HTML                    --*/
+/*-- ========================================= --*/
+.contenedorBlog .portada .bannerAbout {
   display: flex;
   max-width: 100%;
   height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/bannerCapacitaciones1.jpg); }
-  section .bannerCapacitaciones .wrap .botones {
-    display: flex;
-    margin-top: 1.875rem;
-    flex-flow: row wrap; }
-    section .bannerCapacitaciones .wrap .botones .btn1:hover {
-      background-color: rgba(255, 255, 255, 0.3); }
-    section .bannerCapacitaciones .wrap .botones .btn2 {
-      border: 2px solid #fff;
-      color: #000;
-      background-color: #fff; }
-      section .bannerCapacitaciones .wrap .botones .btn2:hover {
-        background-color: rgba(255, 255, 255, 0.3);
-        color: #fff; }
+  background-image: url(../../img/portadaNosotros.jpg); }
 
-.container-fluid .row .col .card {
+.contenedorBlog #intro {
+  grid-area: zona1; }
+
+.contenedorBlog .contenidoBlog {
+  grid-area: destacado; }
+  .contenedorBlog .contenidoBlog .asideBlog {
+    grid-area: aside; }
+
+.container-fluid .destacadoBlog1 {
+  animation-name: aparecer;
+  animation-duration: 1.8s;
+  position: relative;
+  animation-timing-function: linear; }
+
+@keyframes aparecer {
+  0% {
+    left: -100%; }
+  25% {
+    left: -75%; }
+  50% {
+    left: -50%; }
+  75% {
+    left: -25%; }
+  100% {
+    left: 0%; } }
+
+.asideBlog {
+  background-color: #424642; }
+  .asideBlog aside .col img {
+    border-radius: 40%;
+    height: 10em;
+    width: 10em; }
+  .asideBlog aside .col-12 .botones .boton1 {
+    color: #fff;
+    margin-right: 1.25rem; }
+    .asideBlog aside .col-12 .botones .boton1:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .asideBlog aside .col-12 .botones .boton2 {
+    color: #000;
+    background-color: #fff; }
+    .asideBlog aside .col-12 .botones .boton2:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #fff; }
+
+/*     EXTENDS  */
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer"; }
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
+
+.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+  flex-basis: 30%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center; }
+
+.container-fluid .destacadoBlog1 section .card, .row div .card {
   width: 70%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.2s; }
-  .container-fluid .row .col .card:hover {
+  .container-fluid .destacadoBlog1 section .card:hover, .row div .card:hover {
     transform: scale(1.02); }
 
-section .Page .pagination page-item .page-link {
-  color: #000; }
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer"; }
+
+.contenedorAbout {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
+
+.contenedorContacto {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold; }
+  form .btn:hover {
+    background-color: green; }
+
+.container-fluid .row .col div .btn {
+  color: white;
+  background-color: #0c550c; }
+  .container-fluid .row .col div .btn:hover {
+    background-color: green; }
+
+/*-- ========================================= -- */
+/*--                   ABOUT.HTML              --*/
+/*-- ========================================= --*/
+.contenedorAbout .portada {
+  grid-area: portada; }
+  .contenedorAbout .portada .bannerAbout {
+    display: flex;
+    max-width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../img/portadaNosotros.jpg); }
+
+/*     EXTENDS  */
+.contenedorIndex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header			   header   	 header" "portada       portada     portada" "zona1         zona1       zona1" "zona2         zona2       zona2" "slider        slider      slider" "destacado		 destacado 	 destacado" "footer	 		   footer 		 footer"; }
+
+.contenedorCapacitaciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
+
+.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+  flex-basis: 30%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  text-align: center; }
+
+.container-fluid .destacadoBlog1 section .card, .row div .card {
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s; }
+  .container-fluid .destacadoBlog1 section .card:hover, .row div .card:hover {
+    transform: scale(1.02); }
+
+.contenedorBlog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "destacado       destacado           destacado" "aside           aside               aside" "footer          footer              footer"; }
+
+.contenedorAbout {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
+
+.contenedorContacto {
+  width: 100%;
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+
+/*    MAPAS      */
+form .btn {
+  color: white;
+  background-color: #0c550c;
+  font-size: 1.125rem;
+  font-weight: bold; }
+  form .btn:hover {
+    background-color: green; }
+
+.container-fluid .row .col div .btn {
+  color: white;
+  background-color: #0c550c; }
+  .container-fluid .row .col div .btn:hover {
+    background-color: green; }
+
+/*-- ========================================= -- */
+/*--              CONTACTO.HTML          --*/
+/*-- ========================================= --*/
+.contenedorContacto .portada .bannerContacto {
+  display: flex;
+  max-width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../img/laSerranita.jpg); }
+
+.contenedorContacto #local {
+  grid-area: zona1;
+  padding-bottom: 1.875rem;
+  align-items: center; }
+  .contenedorContacto #local .mapa {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; }
+  .contenedorContacto #local .wrapper {
+    padding-left: 20px; }
+
+.contenedorContacto .formulario {
+  grid-area: formulario;
+  width: 50%;
+  margin: 0 auto; }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XL       --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 1200px) {
   section .banner {
-    background-position: center; } }
+    background-position: center; }
+  /* Contacto.html  */
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px; }
+    #local .wrapper {
+      width: 90%;
+      margin: auto;
+      padding-top: 50px; }
+  .container-fluid .destacadoBLog1 {
+    height: 40%; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA L        --*/
@@ -254,46 +787,103 @@ section .Page .pagination page-item .page-link {
 /*--            MEDIA QUERYS PANTALLA M       --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 768px) {
-  #intro,
-  #equipo {
-    width: 90% !important; }
-  section .capacitaciones-columna {
-    width: 100% !important;
+  .contenedorIndex {
+    font-size: 15px; }
+    .contenedorIndex .destacado .capacitacionesColumna {
+      width: 85%;
+      text-align: start; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
+        font-size: 22px; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesBoton {
+        display: none; }
+  .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
+    padding-left: 50px; } }
+
+.contenedorContacto #local {
+  flex-direction: column-reverse; }
+  .contenedorContacto #local .wrapper .ubicacion,
+  .contenedorContacto #local .wrapper .ubicacionTexto {
     text-align: center; }
-  /* CONTACTO */ }
+
+.contenedorContacto .formulario {
+  width: 90%; }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA SM      --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 576px) {
-  section .capacitaciones-columna .carta {
-    flex-wrap: wrap;
-    justify-content: center !important; }
-  /* CAPACITACIONES */ }
+  .contenedorIndex .destacado div .destacadoTitulo {
+    font-size: 25px; }
+  .contenedorIndex .destacado .capacitacionesColumna {
+    width: 85%;
+    text-align: center; }
+    .contenedorIndex .destacado .capacitacionesColumna .carta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
+        font-size: 22px;
+        padding-top: 10px; }
+      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesBoton {
+        justify-content: center; }
+  /* CAPACITACIONES */
+  .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
+    width: 90%;
+    padding-left: 50px;
+    padding-top: 50px; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XSM      --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 320px) {
+  .contenedorIndex .portada .bannerIndex .wrap .box h1 {
+    font-size: 25px;
+    display: inline-block; }
+  .contenedorIndex .portada .bannerIndex .wrap .box p {
+    display: none; }
+  .contenedorIndex .zona1 .csb {
+    font-size: 18px; }
+    .contenedorIndex .zona1 .csb .tecnicas {
+      font-size: 16px; }
+  .contenedorIndex .zona1 .terapeutas {
+    font-size: 16px; }
+  .contenedorIndex .zona2 #equipo .equipoTitulo {
+    font-size: 18px; }
+  .contenedorIndex .zona2 #equipo .equipoDescripcion {
+    display: none; }
+  .contenedorIndex .zona2 #equipo .equipoMobile {
+    text-align: center; }
+  .contenedorIndex .destacado div .destacadoTitulo {
+    font-size: 23px; }
+  .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
+    font-size: 20px; }
   /* CAPACITACIONES */
-  section .bannerCapacitaciones {
+  .contenedorCapacitaciones section .bannerCapacitaciones {
     background-position: 60% 60%; }
-  section .banner .wrap .box {
+  .contenedorCapacitaciones section .banner .wrap .box {
     flex-basis: 100%;
     color: #fff;
     text-align: left;
     align-self: center; }
-    section .banner .wrap .box span {
+    .contenedorCapacitaciones section .banner .wrap .box span {
       font-size: 15px;
       letter-spacing: 2px;
       font-weight: 300;
       color: white; }
-    section .banner .wrap .box h1 {
+    .contenedorCapacitaciones section .banner .wrap .box h1 {
       font-size: 20px;
       line-height: 0.9;
       padding-bottom: 10px; }
-    section .banner .wrap .box p {
+    .contenedorCapacitaciones section .banner .wrap .box p {
       font-size: 12px;
       line-height: 1.2; }
-  .container-fluid .row .col .card {
-    width: 100%; } }
+  /* CONTACTO.HTML */
+  .contenedorContacto .portada .bannerContacto .wrap .box span {
+    color: #fff; }
+  .contenedorContacto .portada .bannerContacto .wrap .box .textoBanner {
+    display: none; }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; } }
