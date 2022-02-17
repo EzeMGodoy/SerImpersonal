@@ -835,6 +835,8 @@ form .btn {
 /*-- ========================================= --*/
 @media screen and (max-width: 480px) {
   /* CAPACITACIONES */
+  .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .textoBanner3 {
+    display: none; }
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
     flex-flow: nowrap; } }
 
