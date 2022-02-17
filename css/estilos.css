@@ -551,7 +551,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/portadaNosotros.jpg); }
+  background-image: url(../img/portadaNosotros.jpg); }
 
 .contenedorBlog #intro {
   grid-area: zona1; }
@@ -666,7 +666,22 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/bannerCapacitaciones1.jpg); }
+  background-image: url(../img/portadaNosotros.jpg);
+  height: 100vh; }
+
+.contenedorAbout .containerNosotros {
+  grid-area: contenido;
+  padding-bottom: 20px; }
+  .contenedorAbout .containerNosotros .box1 {
+    grid-area: box1; }
+    .contenedorAbout .containerNosotros .box1 .probando {
+      display: flex; }
+      .contenedorAbout .containerNosotros .box1 .probando .boxTexto {
+        background-color: red; }
+        .contenedorAbout .containerNosotros .box1 .probando .boxTexto .boxTexto--titulo {
+          font-size: 1.5rem;
+          text-align: center;
+          padding-top: 20px; }
 
 /*     EXTENDS  */
 .contenedorIndex {
@@ -737,7 +752,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/laSerranita.jpg); }
+  background-image: url(../img/laSerranita.jpg); }
 
 .contenedorContacto #local {
   grid-area: zona1;
@@ -834,6 +849,14 @@ form .btn {
 /*--      MEDIA QUERYS PANTALLA ADICIONAL      --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 480px) {
+  /* INDEX.HTML*/
+  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner1 {
+    font-size: 22px; }
+  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner2 {
+    font-size: 26px;
+    line-height: 1.5; }
+  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner3 {
+    display: none; }
   /* CAPACITACIONES */
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .textoBanner3 {
     display: none; }
@@ -844,13 +867,6 @@ form .btn {
 /*--            MEDIA QUERYS PANTALLA XSM      --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 320px) {
-  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner1 {
-    font-size: 22px; }
-  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner2 {
-    font-size: 26px;
-    line-height: 1.5; }
-  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner3 {
-    display: none; }
   .contenedorIndex .zona1 .csb {
     font-size: 18px; }
     .contenedorIndex .zona1 .csb .tecnicas {

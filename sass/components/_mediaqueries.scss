@@ -168,13 +168,35 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 480px) {
+  /* INDEX.HTML*/
+  .contenedorIndex {
+    .portada {
+      .bannerIndex{
+        .wrap{
+          .box{
+            .textoBanner1 {
+              font-size: 22px;
+            }
+            .textoBanner2 {
+              font-size: 26px;
+              line-height: 1.5;
+            }
+            .textoBanner3 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
   /* CAPACITACIONES */
   .contenedorCapacitaciones {
     .portada {
       .bannerCapacitaciones {
         .wrap {
           .box {
-            .textoBanner3{
+            .textoBanner3 {
               display: none;
             }
             .botones {
@@ -195,25 +217,7 @@
   // index.html
 
   .contenedorIndex {
-    .portada {
-      .bannerIndex {
-        .wrap {
-          .box {
-            .textoBanner1 {
-              font-size: 22px;
-            }
-            .textoBanner2 {
-              font-size: 26px;
-              line-height: 1.5;
-            }
-            .textoBanner3 {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-    .zona1 {
+        .zona1 {
       .csb {
         font-size: 18px;
         .tecnicas {
@@ -283,7 +287,6 @@
 
             .botones {
               flex-flow: wrap;
-        
             }
           }
         }

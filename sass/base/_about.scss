@@ -9,13 +9,32 @@
 
 .contenedorAbout {
   @extend %contenedorAbout;
-  .portada{
+  .portada {
     .bannerAbout {
       @include bannerMedidas;
-      background-image: url(../../img/bannerCapacitaciones1.jpg);
+      background-image: url(../img/portadaNosotros.jpg);
+      height: 100vh;
     }
   }
- 
+  .containerNosotros {
+    grid-area: contenido;
+    // padding-top: 20px;
+    padding-bottom: 20px;
+    .box1 {
+      grid-area: box1;
+      .probando {
+        display: flex;
+        .boxTexto {
+          background-color: red;
+          .boxTexto--titulo {
+            font-size: 1.5rem;
+            text-align: center;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+    
+    
+  }
 }
-
-
