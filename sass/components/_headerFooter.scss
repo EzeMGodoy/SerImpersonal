@@ -75,19 +75,20 @@ header {
         text-align: left;
         align-self: center;
 
-        span {
+        .textoBanner1 {
           font-size: 1.125rem;
           letter-spacing: 2px;
           font-weight: 300;
-          color: #c1c5c1;
+          color: rgb(92, 184, 92);
+          font-weight: bold;
         }
 
-        h1 {
-          font-size: 2rem;
+        .textoBanner2 {
+          font-size: 32px;
           line-height: 0.9;
           padding-bottom: 10px;
         }
-        p {
+        .textoBanner3 {
           font-size: 0.9375rem;
           line-height: 1.2;
         }
