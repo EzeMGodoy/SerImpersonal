@@ -762,6 +762,9 @@ form .btn {
 @media screen and (max-width: 1200px) {
   section .banner {
     background-position: center; }
+  /* Capacitaciones.html */
+  .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
+    flex-flow: nowrap; }
   /* Contacto.html  */
   #local {
     flex-wrap: wrap;
@@ -788,14 +791,12 @@ form .btn {
 /*-- ========================================= --*/
 @media screen and (max-width: 768px) {
   .contenedorIndex {
-    font-size: 15px; }
+    font-size: 16px; }
     .contenedorIndex .destacado .capacitacionesColumna {
       width: 85%;
       text-align: start; }
       .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
         font-size: 22px; }
-      .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesBoton {
-        display: none; }
   .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
     padding-left: 50px; } }
 
@@ -833,6 +834,14 @@ form .btn {
     padding-top: 50px; } }
 
 /*-- ========================================= -- */
+/*--      MEDIA QUERYS PANTALLA ADICIONAL      --*/
+/*-- ========================================= --*/
+@media screen and (max-width: 480px) {
+  /* CAPACITACIONES */
+  .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
+    flex-flow: nowrap; } }
+
+/*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XSM      --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 320px) {
@@ -860,23 +869,24 @@ form .btn {
   /* CAPACITACIONES */
   .contenedorCapacitaciones section .bannerCapacitaciones {
     background-position: 60% 60%; }
-  .contenedorCapacitaciones section .banner .wrap .box {
+  .contenedorCapacitaciones .portada .banner .wrap .box {
     flex-basis: 100%;
     color: #fff;
     text-align: left;
     align-self: center; }
-    .contenedorCapacitaciones section .banner .wrap .box span {
-      font-size: 15px;
+    .contenedorCapacitaciones .portada .banner .wrap .box .aviso {
+      font-size: 16px;
       letter-spacing: 2px;
       font-weight: 300;
-      color: white; }
-    .contenedorCapacitaciones section .banner .wrap .box h1 {
+      color: #8b4444; }
+    .contenedorCapacitaciones .portada .banner .wrap .box .nuestro {
       font-size: 20px;
       line-height: 0.9;
       padding-bottom: 10px; }
-    .contenedorCapacitaciones section .banner .wrap .box p {
-      font-size: 12px;
-      line-height: 1.2; }
+    .contenedorCapacitaciones .portada .banner .wrap .box .bannerTexto {
+      display: none; }
+    .contenedorCapacitaciones .portada .banner .wrap .box .botones {
+      flex-flow: wrap; }
   /* CONTACTO.HTML */
   .contenedorContacto .portada .bannerContacto .wrap .box span {
     color: #fff; }
