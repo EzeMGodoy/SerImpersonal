@@ -10,7 +10,6 @@
 .contenedorAbout {
   @extend %contenedorAbout;
   .portada{
-    grid-area: portada;
     .bannerAbout {
       @include bannerMedidas;
       background-image: url(../../img/portadaNosotros.jpg);

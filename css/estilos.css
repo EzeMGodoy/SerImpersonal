@@ -28,7 +28,7 @@ form .btn {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
 
-.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
   border: 2px solid #fff;
   border-radius: 20px;
@@ -157,7 +157,7 @@ footer {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
 
-.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
   border: 2px solid #fff;
   border-radius: 20px;
@@ -348,7 +348,7 @@ form .btn {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
 
-.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
   border: 2px solid #fff;
   border-radius: 20px;
@@ -395,39 +395,37 @@ form .btn {
 /*-- ========================================= -- */
 /*--              CAPACITACIONES.HTML          --*/
 /*-- ========================================= --*/
-.contenedorCapacitaciones section {
-  grid-area: portada; }
-  .contenedorCapacitaciones section .bannerCapacitaciones {
+.contenedorCapacitaciones .portada .bannerCapacitaciones {
+  display: flex;
+  max-width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bannerCapacitaciones1.jpg); }
+  .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box {
+    color: #fff;
+    width: 60%;
     display: flex;
-    max-width: 100%;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../img/bannerCapacitaciones1.jpg); }
-    .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
-      color: #fff;
-      width: 60%;
+    flex-direction: column;
+    padding-top: 50px; }
+    .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .nuestro {
+      font-size: 1.5rem; }
+    .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
       display: flex;
-      flex-direction: column;
-      padding-top: 50px; }
-      .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .nuestro {
-        font-size: 1.5rem; }
-      .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones {
-        display: flex;
-        margin-top: 7px;
-        flex-flow: row wrap;
-        gap: 5px;
-        width: fit-content; }
-        .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1:hover {
-          background-color: rgba(255, 255, 255, 0.3); }
-        .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2 {
-          border: 2px solid #000;
-          color: #000;
-          background-color: #fff; }
-          .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            color: #fff; }
+      margin-top: 7px;
+      flex-flow: row wrap;
+      gap: 5px;
+      width: fit-content; }
+      .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1:hover {
+        background-color: rgba(255, 255, 255, 0.3); }
+      .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2 {
+        border: 2px solid #000;
+        color: #000;
+        background-color: #fff; }
+        .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+          color: #fff; }
 
 .contenedorCapacitaciones #intro {
   grid-area: zona1;
@@ -498,7 +496,7 @@ form .btn {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
 
-.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
   border: 2px solid #fff;
   border-radius: 20px;
@@ -613,7 +611,7 @@ form .btn {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
 
-.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
   border: 2px solid #fff;
   border-radius: 20px;
@@ -660,16 +658,14 @@ form .btn {
 /*-- ========================================= -- */
 /*--                   ABOUT.HTML              --*/
 /*-- ========================================= --*/
-.contenedorAbout .portada {
-  grid-area: portada; }
-  .contenedorAbout .portada .bannerAbout {
-    display: flex;
-    max-width: 100%;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../../img/portadaNosotros.jpg); }
+.contenedorAbout .portada .bannerAbout {
+  display: flex;
+  max-width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../img/portadaNosotros.jpg); }
 
 /*     EXTENDS  */
 .contenedorIndex {
@@ -686,7 +682,7 @@ form .btn {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			       header   	         header" "portada           portada             portada" "zona1             zona1               zona1" "contenidoCursos   contenidoCursos     contenidoCursos" "footer	 		       footer 		         footer"; }
 
-.contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
+.contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1, .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2, .asideBlog aside .col-12 .botones .boton1, .asideBlog aside .col-12 .botones .boton2 {
   flex-basis: 30%;
   border: 2px solid #fff;
   border-radius: 20px;

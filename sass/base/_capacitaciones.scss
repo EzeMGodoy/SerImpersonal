@@ -9,8 +9,7 @@
 
 .contenedorCapacitaciones {
   @extend %contenedorCapacitaciones;
-  section {
-    grid-area: portada;
+  .portada {
     .bannerCapacitaciones {
       @include bannerMedidas;
       background-image: url(../img/bannerCapacitaciones1.jpg);
