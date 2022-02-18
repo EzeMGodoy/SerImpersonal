@@ -333,11 +333,12 @@
     .containerNosotros {
       .box1 {
         .containerFoto {
-          .imagen {
-            width: 300px;
-          }
+          display: flex;
           .divAraceli {
-            padding: 0 20px;
+          
+            .araceliCita{
+              padding: 0 20px;
+            }
           }
         }
       }
@@ -348,11 +349,16 @@
       }
       .box3 {
         .containerFoto {
+          display: flex;
+          flex-direction: row-reverse;
           .imagen {
             width: 300px;
           }
           .divFabricio {
-            padding: 0 20px;
+            
+            .fabricioCita{
+              padding: 0 20px;
+            }
           }
         }
       }

@@ -1027,16 +1027,19 @@ form .btn {
     display: none; }
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
     flex-flow: nowrap; }
-  .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
-    width: 300px; }
-  .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli {
-    padding: 0 20px; }
+  .contenedorAbout .containerNosotros .box1 .containerFoto {
+    display: flex; }
+    .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli .araceliCita {
+      padding: 0 20px; }
   .contenedorAbout .containerNosotros .box2 .parrafoNosotros {
     padding: 20px 70px; }
-  .contenedorAbout .containerNosotros .box3 .containerFoto .imagen {
-    width: 300px; }
-  .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio {
-    padding: 0 20px; } }
+  .contenedorAbout .containerNosotros .box3 .containerFoto {
+    display: flex;
+    flex-direction: row-reverse; }
+    .contenedorAbout .containerNosotros .box3 .containerFoto .imagen {
+      width: 300px; }
+    .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio .fabricioCita {
+      padding: 0 20px; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XSM      --*/
