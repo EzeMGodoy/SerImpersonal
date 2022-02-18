@@ -335,8 +335,7 @@
         .containerFoto {
           display: flex;
           .divAraceli {
-          
-            .araceliCita{
+            .araceliCita {
               padding: 0 20px;
             }
           }
@@ -351,12 +350,9 @@
         .containerFoto {
           display: flex;
           flex-direction: row-reverse;
-          .imagen {
-            width: 300px;
-          }
+
           .divFabricio {
-            
-            .fabricioCita{
+            .fabricioCita {
               padding: 0 20px;
             }
           }
@@ -454,13 +450,13 @@
   /* ABOUT.HTML */
 
   .contenedorAbout {
-    .containerNosotros{
-      .box1{
-        .containerFoto{
-          .imagen{
+    .containerNosotros {
+      .box1 {
+        .containerFoto {
+          .imagen {
             width: 320px;
           }
-          .divAraceli{
+          .divAraceli {
             display: none;
           }
         }
@@ -472,12 +468,12 @@
         }
       }
 
-      .box3{
-        .containerFoto{
-          .imagen{
+      .box3 {
+        .containerFoto {
+          .imagen {
             width: 320px;
           }
-          .divFabricio{
+          .divFabricio {
             display: none;
           }
         }

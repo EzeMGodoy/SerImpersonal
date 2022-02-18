@@ -1036,8 +1036,6 @@ form .btn {
   .contenedorAbout .containerNosotros .box3 .containerFoto {
     display: flex;
     flex-direction: row-reverse; }
-    .contenedorAbout .containerNosotros .box3 .containerFoto .imagen {
-      width: 300px; }
     .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio .fabricioCita {
       padding: 0 20px; } }
 
