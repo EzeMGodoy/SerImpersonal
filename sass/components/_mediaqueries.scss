@@ -50,6 +50,35 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 992px) {
+  /* ABOUT.HTML */
+
+  .contenedorAbout {
+    .containerNosotros {
+      .box1 {
+        // flex-flow: wrap;
+        .boxTexto {
+          .boxTexto--parrafo {
+            padding: 0 6.25rem;
+          }
+        }
+      }
+      .box2 {
+        display: flex;
+        .columnaColor {
+          display: none;
+        }
+      }
+      .box3 {
+        // flex-flow: wrap;
+        .boxTexto {
+          .boxTexto--parrafo {
+            padding: 0 6.25rem;
+          }
+        }
+      }
+    }
+  }
+
   /* CONTACTO */
   section {
     .banner {
@@ -96,23 +125,82 @@
       }
     }
   }
-}
 
-.contenedorContacto {
-  #local {
-    flex-direction: column-reverse;
-    .wrapper {
-      .ubicacion,
-      .ubicacionTexto {
-        text-align: center;
+  .contenedorAbout {
+    .containerNosotros {
+      .box1 {
+        flex-flow: wrap;
+        .boxTexto {
+          width: 100%;
+          padding: 50px 10px;
+          .boxTexto--parrafo {
+            color: #fff;
+          }
+        }
+        .containerFoto {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            max-height: 400px;
+          }
+          .divAraceli {
+            display: unset;
+            color: #fff;
+            text-align: center;
+            font-style: italic;
+          }
+        }
+      }
+      .box2 {
+        .asideNosotros {
+          display: none;
+        }
+
+        .columnaColor {
+          display: none;
+        }
+      }
+
+      .box3 {
+        flex-flow: wrap;
+        .boxTexto {
+          width: 100%;
+          padding: 50px 10px;
+        }
+        .containerFoto {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            max-height: 400px;
+          }
+          .divFabricio {
+            display: unset;
+            color: #fff;
+            text-align: center;
+            font-style: italic;
+          }
+        }
       }
     }
   }
-  .formulario {
-    width: 90%;
+
+  .contenedorContacto {
+    #local {
+      flex-direction: column-reverse;
+      .wrapper {
+        .ubicacion,
+        .ubicacionTexto {
+          text-align: center;
+        }
+      }
+    }
+    .formulario {
+      width: 90%;
+    }
   }
 }
-
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA SM      --*/
 /*-- ========================================= --*/
@@ -161,6 +249,40 @@
       }
     }
   }
+
+  .contenedorAbout {
+    .containerNosotros {
+      .box1 {
+        .boxTexto {
+          .boxTexto--parrafo {
+            padding: 0 0;
+          }
+        }
+        .containerFoto {
+          .imagen {
+            width: 55%;
+          }
+        }
+      }
+      .box2 {
+        .parrafoNosotros {
+          padding: 80px;
+        }
+      }
+      .box3 {
+        .boxTexto {
+          .boxTexto--parrafo {
+            padding: 0 0;
+          }
+        }
+        .containerFoto {
+          .imagen {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*-- ========================================= -- */
@@ -171,9 +293,9 @@
   /* INDEX.HTML*/
   .contenedorIndex {
     .portada {
-      .bannerIndex{
-        .wrap{
-          .box{
+      .bannerIndex {
+        .wrap {
+          .box {
             .textoBanner1 {
               font-size: 22px;
             }
@@ -207,6 +329,35 @@
       }
     }
   }
+  .contenedorAbout {
+    .containerNosotros {
+      .box1 {
+        .containerFoto {
+          .imagen {
+            width: 300px;
+          }
+          .divAraceli {
+            padding: 0 20px;
+          }
+        }
+      }
+      .box2 {
+        .parrafoNosotros {
+          padding: 20px 70px;
+        }
+      }
+      .box3 {
+        .containerFoto {
+          .imagen {
+            width: 300px;
+          }
+          .divFabricio {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*-- ========================================= -- */
@@ -217,7 +368,7 @@
   // index.html
 
   .contenedorIndex {
-        .zona1 {
+    .zona1 {
       .csb {
         font-size: 18px;
         .tecnicas {
@@ -288,6 +439,40 @@
             .botones {
               flex-flow: wrap;
             }
+          }
+        }
+      }
+    }
+  }
+
+  /* ABOUT.HTML */
+
+  .contenedorAbout {
+    .containerNosotros{
+      .box1{
+        .containerFoto{
+          .imagen{
+            width: 320px;
+          }
+          .divAraceli{
+            display: none;
+          }
+        }
+      }
+
+      .box2 {
+        .parrafoNosotros {
+          padding: 5px 10px;
+        }
+      }
+
+      .box3{
+        .containerFoto{
+          .imagen{
+            width: 320px;
+          }
+          .divFabricio{
+            display: none;
           }
         }
       }

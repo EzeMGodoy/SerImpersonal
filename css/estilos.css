@@ -51,16 +51,23 @@ form .btn {
 
 .contenedorAbout {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
 
 .contenedorContacto {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /* ===== GLOBALES ===== */
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f5f0ea; }
+  background-color: #f5f0ea;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
@@ -181,10 +188,16 @@ footer {
 
 .contenedorAbout {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
 
 .contenedorContacto {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /*    MAPAS      */
@@ -372,10 +385,16 @@ form .btn {
 
 .contenedorAbout {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
 
 .contenedorContacto {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /*    MAPAS      */
@@ -520,10 +539,16 @@ form .btn {
 
 .contenedorAbout {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
 
 .contenedorContacto {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /*    MAPAS      */
@@ -635,10 +660,16 @@ form .btn {
 
 .contenedorAbout {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
 
 .contenedorContacto {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /*    MAPAS      */
@@ -659,29 +690,102 @@ form .btn {
 /*-- ========================================= -- */
 /*--                   ABOUT.HTML              --*/
 /*-- ========================================= --*/
-.contenedorAbout .portada .bannerAbout {
-  display: flex;
-  max-width: 100%;
-  height: 60vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../img/portadaNosotros.jpg);
-  height: 100vh; }
-
-.contenedorAbout .containerNosotros {
-  grid-area: contenido;
-  padding-bottom: 20px; }
-  .contenedorAbout .containerNosotros .box1 {
-    grid-area: box1; }
-    .contenedorAbout .containerNosotros .box1 .probando {
+.contenedorAbout {
+  background-color: #5E748F; }
+  .contenedorAbout .portada .bannerAbout {
+    display: flex;
+    max-width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/portadaNosotros.jpg); }
+  .contenedorAbout .containerNosotros {
+    grid-area: contenido; }
+    .contenedorAbout .containerNosotros .box1 {
       display: flex; }
-      .contenedorAbout .containerNosotros .box1 .probando .boxTexto {
-        background-color: red; }
-        .contenedorAbout .containerNosotros .box1 .probando .boxTexto .boxTexto--titulo {
+      .contenedorAbout .containerNosotros .box1 .boxTexto {
+        background-color: #748f5e;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--titulo {
+          color: #fff;
           font-size: 1.5rem;
           text-align: center;
-          padding-top: 20px; }
+          padding-top: 1.25rem; }
+        .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
+          color: #fff;
+          padding: 0 11.25rem;
+          text-align: center; }
+      .contenedorAbout .containerNosotros .box1 .containerFoto img {
+        max-height: 37.5rem;
+        object-fit: contain;
+        width: 100%; }
+      .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli {
+        display: none; }
+    .contenedorAbout .containerNosotros .box2 {
+      display: grid;
+      grid-template-columns: 2fr 6fr 2fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "aside     parrafo   columnaColor" "aside     parrafo   columnaColor" "aside     parrafo   columnaColor";
+      background-color: red; }
+      .contenedorAbout .containerNosotros .box2 .asideNosotros {
+        grid-area: aside;
+        background-color: #5E8C8F;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedorAbout .containerNosotros .box2 .asideNosotros .asidePalabra {
+          transform: rotate(-90deg);
+          letter-spacing: 0.4375rem;
+          text-align: center;
+          font-size: 3rem;
+          font-weight: bold;
+          color: #000; }
+      .contenedorAbout .containerNosotros .box2 .parrafoNosotros {
+        grid-area: parrafo;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 9.375rem;
+        border: 1px solid black; }
+        .contenedorAbout .containerNosotros .box2 .parrafoNosotros .boxTexto--titulo {
+          font-size: 1.5rem;
+          text-align: center;
+          padding-top: 1.25rem; }
+        .contenedorAbout .containerNosotros .box2 .parrafoNosotros .boxTexto--parrafo {
+          text-align: center; }
+      .contenedorAbout .containerNosotros .box2 .columnaColor {
+        grid-area: columnaColor;
+        display: flex;
+        background-color: #5E8C8F; }
+    .contenedorAbout .containerNosotros .box3 {
+      display: flex;
+      flex-direction: row-reverse; }
+      .contenedorAbout .containerNosotros .box3 .boxTexto {
+        background-color: #748f5e;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--titulo {
+          color: #fff;
+          font-size: 1.5rem;
+          text-align: center;
+          padding-top: 1.25rem; }
+        .contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--parrafo {
+          color: #fff;
+          padding: 0 11.25rem;
+          text-align: center; }
+      .contenedorAbout .containerNosotros .box3 .containerFoto img {
+        max-height: 37.5rem;
+        object-fit: contain;
+        width: 100%; }
+      .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio {
+        display: none; }
 
 /*     EXTENDS  */
 .contenedorIndex {
@@ -721,10 +825,16 @@ form .btn {
 
 .contenedorAbout {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "contenido       contenido           contenido" "footer          footer              footer"; }
 
 .contenedorContacto {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
 
 /*    MAPAS      */
@@ -792,6 +902,15 @@ form .btn {
 /*--            MEDIA QUERYS PANTALLA L        --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 992px) {
+  /* ABOUT.HTML */
+  .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
+    padding: 0 6.25rem; }
+  .contenedorAbout .containerNosotros .box2 {
+    display: flex; }
+    .contenedorAbout .containerNosotros .box2 .columnaColor {
+      display: none; }
+  .contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--parrafo {
+    padding: 0 6.25rem; }
   /* CONTACTO */
   section .banner {
     background-position: center; }
@@ -810,16 +929,52 @@ form .btn {
       .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
         font-size: 22px; }
   .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
-    padding-left: 50px; } }
-
-.contenedorContacto #local {
-  flex-direction: column-reverse; }
-  .contenedorContacto #local .wrapper .ubicacion,
-  .contenedorContacto #local .wrapper .ubicacionTexto {
-    text-align: center; }
-
-.contenedorContacto .formulario {
-  width: 90%; }
+    padding-left: 50px; }
+  .contenedorAbout .containerNosotros .box1 {
+    flex-flow: wrap; }
+    .contenedorAbout .containerNosotros .box1 .boxTexto {
+      width: 100%;
+      padding: 50px 10px; }
+      .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
+        color: #fff; }
+    .contenedorAbout .containerNosotros .box1 .containerFoto {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contenedorAbout .containerNosotros .box1 .containerFoto img {
+        max-height: 400px; }
+      .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli {
+        display: unset;
+        color: #fff;
+        text-align: center;
+        font-style: italic; }
+  .contenedorAbout .containerNosotros .box2 .asideNosotros {
+    display: none; }
+  .contenedorAbout .containerNosotros .box2 .columnaColor {
+    display: none; }
+  .contenedorAbout .containerNosotros .box3 {
+    flex-flow: wrap; }
+    .contenedorAbout .containerNosotros .box3 .boxTexto {
+      width: 100%;
+      padding: 50px 10px; }
+    .contenedorAbout .containerNosotros .box3 .containerFoto {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contenedorAbout .containerNosotros .box3 .containerFoto img {
+        max-height: 400px; }
+      .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio {
+        display: unset;
+        color: #fff;
+        text-align: center;
+        font-style: italic; }
+  .contenedorContacto #local {
+    flex-direction: column-reverse; }
+    .contenedorContacto #local .wrapper .ubicacion,
+    .contenedorContacto #local .wrapper .ubicacionTexto {
+      text-align: center; }
+  .contenedorContacto .formulario {
+    width: 90%; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA SM      --*/
@@ -843,7 +998,17 @@ form .btn {
   .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
     width: 90%;
     padding-left: 50px;
-    padding-top: 50px; } }
+    padding-top: 50px; }
+  .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
+    padding: 0 0; }
+  .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
+    width: 55%; }
+  .contenedorAbout .containerNosotros .box2 .parrafoNosotros {
+    padding: 80px; }
+  .contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--parrafo {
+    padding: 0 0; }
+  .contenedorAbout .containerNosotros .box3 .containerFoto .imagen {
+    width: 55%; } }
 
 /*-- ========================================= -- */
 /*--      MEDIA QUERYS PANTALLA ADICIONAL      --*/
@@ -861,7 +1026,17 @@ form .btn {
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .textoBanner3 {
     display: none; }
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
-    flex-flow: nowrap; } }
+    flex-flow: nowrap; }
+  .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
+    width: 300px; }
+  .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli {
+    padding: 0 20px; }
+  .contenedorAbout .containerNosotros .box2 .parrafoNosotros {
+    padding: 20px 70px; }
+  .contenedorAbout .containerNosotros .box3 .containerFoto .imagen {
+    width: 300px; }
+  .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio {
+    padding: 0 20px; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XSM      --*/
@@ -903,6 +1078,17 @@ form .btn {
         display: none; }
       .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
         flex-flow: wrap; }
+  /* ABOUT.HTML */
+  .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
+    width: 320px; }
+  .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli {
+    display: none; }
+  .contenedorAbout .containerNosotros .box2 .parrafoNosotros {
+    padding: 5px 10px; }
+  .contenedorAbout .containerNosotros .box3 .containerFoto .imagen {
+    width: 320px; }
+  .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio {
+    display: none; }
   /* CONTACTO.HTML */
   .contenedorContacto .portada .bannerContacto .wrap .box span {
     color: #fff; }
