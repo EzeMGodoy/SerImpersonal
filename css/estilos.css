@@ -425,7 +425,6 @@ form .btn {
   background-image: url(../img/bannerCapacitaciones1.jpg); }
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box {
     color: #fff;
-    width: 60%;
     display: flex;
     flex-direction: column;
     padding-top: 50px; }
@@ -433,10 +432,10 @@ form .btn {
       font-size: 1.5rem; }
     .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
       display: flex;
+      justify-content: center;
       margin-top: 7px;
       flex-flow: row wrap;
-      gap: 5px;
-      width: fit-content; }
+      gap: 5px; }
       .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn1:hover {
         background-color: rgba(255, 255, 255, 0.3); }
       .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones .btn2 {
@@ -864,13 +863,6 @@ form .btn {
   background-position: center;
   background-image: url(../img/laSerranita.jpg); }
 
-.contenedorContacto .portada .wrap .box .contactoPonte {
-  color: green;
-  padding: 5px;
-  font-weight: bold;
-  background-color: #fff;
-  display: inline-block; }
-
 .contenedorContacto #local {
   grid-area: zona1;
   display: flex;
@@ -1106,17 +1098,15 @@ form .btn {
 /*-- ========================================= --*/
 @media screen and (max-width: 480px) {
   /* INDEX.HTML*/
-  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner1 {
+  /* CAPACITACIONES */
+  .contenedorIndex .portada .banner .wrap .box .textoBanner1, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1, .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
     font-size: 22px; }
-  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner2 {
+  .contenedorIndex .portada .banner .wrap .box .textoBanner2, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2, .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
     font-size: 26px;
     line-height: 1.5; }
-  .contenedorIndex .portada .bannerIndex .wrap .box .textoBanner3 {
+  .contenedorIndex .portada .banner .wrap .box .textoBanner3, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3, .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
     display: none; }
-  /* CAPACITACIONES */
-  .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .textoBanner3 {
-    display: none; }
-  .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
+  .contenedorIndex .portada .banner .wrap .box .botones, .contenedorCapacitaciones .portada .banner .wrap .box .botones, .contenedorContacto .portada .banner .wrap .box .botones {
     flex-flow: nowrap; }
   /* ABOUT.HTML*/
   .contenedorAbout .containerNosotros .box1 .containerFoto {

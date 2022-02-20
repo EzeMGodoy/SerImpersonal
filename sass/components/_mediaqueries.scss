@@ -329,33 +329,41 @@
 
 @media screen and (max-width: 480px) {
   /* INDEX.HTML*/
-  .contenedorIndex {
+  // .contenedorIndex {
+  //   .portada {
+  //     .bannerIndex {
+  //       .wrap {
+  //         .box {
+  //           .textoBanner1 {
+  //             font-size: 22px;
+  //           }
+  //           .textoBanner2 {
+  //             font-size: 26px;
+  //             line-height: 1.5;
+  //           }
+  //           .textoBanner3 {
+  //             display: none;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  /* CAPACITACIONES */
+  .contenedorIndex, .contenedorCapacitaciones, .contenedorContacto {
     .portada {
-      .bannerIndex {
+      .banner {
         .wrap {
           .box {
             .textoBanner1 {
               font-size: 22px;
             }
+
             .textoBanner2 {
               font-size: 26px;
               line-height: 1.5;
             }
-            .textoBanner3 {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  /* CAPACITACIONES */
-  .contenedorCapacitaciones {
-    .portada {
-      .bannerCapacitaciones {
-        .wrap {
-          .box {
             .textoBanner3 {
               display: none;
             }

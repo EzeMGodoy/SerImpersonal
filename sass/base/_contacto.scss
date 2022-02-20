@@ -14,17 +14,17 @@
       @include bannerMedidas;
       background-image: url(../img/laSerranita.jpg);
     }
-    .wrap{
-      .box{
-        .contactoPonte {
-          color: green;
-          padding: 5px;
-          font-weight: bold;
-          background-color: #fff;
-          display: inline-block;
-        }
-      }
-    }
+    // .wrap{
+    //   .box{
+    //     .contactoPonte {
+    //       color: green;
+    //       padding: 5px;
+    //       font-weight: bold;
+    //       background-color: #fff;
+    //       display: inline-block;
+    //     }
+    //   }
+    // }
   }
   #local {
     grid-area: zona1;

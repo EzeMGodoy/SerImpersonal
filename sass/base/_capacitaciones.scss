@@ -16,7 +16,7 @@
       .wrap {
         .box {
           color: #fff;
-          width: 60%;
+          // width: 60%;
           display: flex;
           flex-direction: column;
           padding-top: 50px;
@@ -25,10 +25,11 @@
           }
           .botones {
             display: flex;
+            justify-content: center;
             margin-top: 7px;
             flex-flow: row wrap;
             gap: 5px;
-            width: fit-content;
+            // width: fit-content;
             .btn1 {
               @extend %botonesPodcast;
               &:hover {
