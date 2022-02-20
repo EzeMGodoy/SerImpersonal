@@ -864,17 +864,30 @@ form .btn {
   background-position: center;
   background-image: url(../img/laSerranita.jpg); }
 
+.contenedorContacto .portada .wrap .box .contactoPonte {
+  color: green;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block; }
+
 .contenedorContacto #local {
   grid-area: zona1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: wrap-reverse;
   background-color: #f7f2ec;
-  padding: 30px 0; }
+  padding: 50px 0; }
+  .contenedorContacto #local .wrapper {
+    width: 50%; }
+    .contenedorContacto #local .wrapper .ubicacion {
+      font-size: 22px;
+      font-weight: bold; }
   .contenedorContacto #local .mapa {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; }
-  .contenedorContacto #local .wrapper {
-    padding-left: 20px; }
+    .contenedorContacto #local .mapa .imgMapa {
+      max-width: 500px;
+      max-height: 400px; }
 
 .contenedorContacto .contenedorFormulario {
   grid-area: formulario;
@@ -934,6 +947,8 @@ form .btn {
         padding: 0; }
         .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul li {
           padding: .3rem; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info .page {
+        color: #fff; }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XL       --*/
@@ -945,13 +960,6 @@ form .btn {
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
     flex-flow: nowrap; }
   /* Contacto.html  */
-  .contenedorContacto #local {
-    flex-wrap: wrap;
-    padding-top: 30px; }
-    .contenedorContacto #local .wrapper {
-      width: 90%;
-      margin: auto;
-      padding-top: 50px; }
   .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p {
     padding: 1rem;
     text-align: left; }
@@ -1031,10 +1039,11 @@ form .btn {
         color: #fff;
         text-align: center;
         font-style: italic; }
-  .contenedorContacto #local {
-    flex-direction: column-reverse; }
-    .contenedorContacto #local .wrapper .ubicacion,
-    .contenedorContacto #local .wrapper .ubicacionTexto {
+  /* CONTACTO.HTML*/
+  .contenedorContacto #local .wrapper {
+    width: 100%;
+    padding: 0 30px; }
+    .contenedorContacto #local .wrapper .ubicacion {
       text-align: center; }
   .contenedorContacto .contenedorFormulario {
     display: flex;
@@ -1075,6 +1084,7 @@ form .btn {
     width: 90%;
     padding-left: 50px;
     padding-top: 50px; }
+  /* ABOUT.HTML */
   .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
     padding: 0 0; }
   .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
@@ -1108,6 +1118,7 @@ form .btn {
     display: none; }
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
     flex-flow: nowrap; }
+  /* ABOUT.HTML*/
   .contenedorAbout .containerNosotros .box1 .containerFoto {
     display: flex; }
     .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli .araceliCita {
@@ -1118,7 +1129,10 @@ form .btn {
     display: flex;
     flex-direction: row-reverse; }
     .contenedorAbout .containerNosotros .box3 .containerFoto .divFabricio .fabricioCita {
-      padding: 0 20px; } }
+      padding: 0 20px; }
+  /* CONTACTO.HTML*/
+  .contenedorContacto #local .mapa img {
+    width: 300px; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XSM      --*/
@@ -1141,24 +1155,30 @@ form .btn {
   .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
     font-size: 20px; }
   /* CAPACITACIONES */
-  .contenedorCapacitaciones .portada .bannerCapacitaciones {
+  .contenedorCapacitaciones .portada .banner,
+  .contenedorContacto .portada .banner {
     background-position: 60% 60%; }
-    .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box {
+    .contenedorCapacitaciones .portada .banner .wrap .box,
+    .contenedorContacto .portada .banner .wrap .box {
       flex-basis: 100%;
       color: #fff;
       text-align: left;
       align-self: center; }
-      .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .textoBanner1 {
+      .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1,
+      .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
         font-size: 16px;
         letter-spacing: 2px;
         font-weight: 300; }
-      .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .textoBanner2 {
+      .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2,
+      .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
         font-size: 20px;
-        line-height: 0.9;
+        line-height: 1.5;
         padding-bottom: 10px; }
-      .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .textoBanner3 {
+      .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3,
+      .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
         display: none; }
-      .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
+      .contenedorCapacitaciones .portada .banner .wrap .box .botones,
+      .contenedorContacto .portada .banner .wrap .box .botones {
         flex-flow: wrap; }
   /* ABOUT.HTML */
   .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
@@ -1176,9 +1196,13 @@ form .btn {
     color: #fff; }
   .contenedorContacto .portada .bannerContacto .wrap .box .textoBanner {
     display: none; }
+  .contenedorContacto #local .wrapper .ubicacion {
+    font-size: 18px; }
   .contenedorContacto .contenedorFormulario {
     padding: 1.5rem 0; }
     .contenedorContacto .contenedorFormulario .marca {
       font-size: 2rem; }
     .contenedorContacto .contenedorFormulario .contact-wrapper {
-      padding: 1rem 0; } }
+      padding: 1rem 0; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
+        padding: 0; } }

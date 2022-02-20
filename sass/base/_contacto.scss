@@ -14,23 +14,43 @@
       @include bannerMedidas;
       background-image: url(../img/laSerranita.jpg);
     }
+    .wrap{
+      .box{
+        .contactoPonte {
+          color: green;
+          padding: 5px;
+          font-weight: bold;
+          background-color: #fff;
+          display: inline-block;
+        }
+      }
+    }
   }
   #local {
     grid-area: zona1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    justify-content:space-evenly;
+    // align-items:center;
+    flex-flow:wrap-reverse;
     background-color: #f7f2ec;
-    padding: 30px 0;
-    // border: 2px solid black;
+    padding: 50px 0;
+    .wrapper{
+      width: 50%;
+      .ubicacion{
+        font-size: 22px;
+        font-weight: bold;
+        
+      }
+    }
 
     .mapa {
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      .imgMapa{
+        max-width: 500px;
+        max-height: 400px;
+      }
     }
-    .wrapper {
-      padding-left: 20px;
-    }
+   
   }
 
   .contenedorFormulario {
@@ -103,6 +123,9 @@
           li{
             padding: .3rem;
           }
+        }
+        .page{
+          color: #fff;
         }
       }
     }

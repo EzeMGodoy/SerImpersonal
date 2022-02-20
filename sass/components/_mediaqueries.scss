@@ -28,15 +28,6 @@
   /* Contacto.html  */
 
   .contenedorContacto {
-    #local {
-      flex-wrap: wrap;
-      padding-top: 30px;
-      .wrapper {
-        width: 90%;
-        margin: auto;
-        padding-top: 50px;
-      }
-    }
     .contenedorFormulario {
       .contact-wrapper {
         .contact-info {
@@ -202,12 +193,14 @@
     }
   }
 
+  /* CONTACTO.HTML*/
+
   .contenedorContacto {
     #local {
-      flex-direction: column-reverse;
       .wrapper {
-        .ubicacion,
-        .ubicacionTexto {
+        width: 100%;
+        padding: 0 30px;
+        .ubicacion {
           text-align: center;
         }
       }
@@ -285,6 +278,8 @@
       }
     }
   }
+
+  /* ABOUT.HTML */
 
   .contenedorAbout {
     .containerNosotros {
@@ -372,6 +367,9 @@
       }
     }
   }
+
+  /* ABOUT.HTML*/
+
   .contenedorAbout {
     .containerNosotros {
       .box1 {
@@ -399,6 +397,18 @@
               padding: 0 20px;
             }
           }
+        }
+      }
+    }
+  }
+
+  /* CONTACTO.HTML*/
+
+  .contenedorContacto {
+    #local {
+      .mapa {
+        img {
+          width: 300px;
         }
       }
     }
@@ -457,9 +467,10 @@
 
   /* CAPACITACIONES */
 
-  .contenedorCapacitaciones {
+  .contenedorCapacitaciones,
+  .contenedorContacto {
     .portada {
-      .bannerCapacitaciones {
+      .banner {
         background-position: 60% 60%;
         .wrap {
           .box {
@@ -472,9 +483,15 @@
               letter-spacing: 2px;
               font-weight: 300;
             }
+            // .contactoPonte {
+            //   color: #000;
+            //   font-weight: bold;
+            //   background-color: #fff;
+            //   display: inline-block;
+            // }
             .textoBanner2 {
               font-size: 20px;
-              line-height: 0.9;
+              line-height: 1.5;
               padding-bottom: 10px;
             }
             .textoBanner3 {
@@ -541,6 +558,14 @@
         }
       }
     }
+    #local {
+      .wrapper {
+        .ubicacion {
+          font-size: 18px;
+        }
+      }
+    }
+
     .contenedorFormulario {
       padding: 1.5rem 0;
       .marca {
@@ -548,9 +573,12 @@
       }
       .contact-wrapper {
         padding: 1rem 0;
+        .contact-info {
+          ul {
+            padding: 0;
+          }
+        }
       }
     }
   }
-
-  
 }
