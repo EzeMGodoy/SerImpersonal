@@ -2,7 +2,7 @@
 /*--            MEDIA QUERYS PANTALLA XL       --*/
 /*-- ========================================= --*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   section {
     .banner {
       background-position: center;
@@ -27,13 +27,29 @@
 
   /* Contacto.html  */
 
-  #local {
-    flex-wrap: wrap;
-    padding-top: 30px;
-    .wrapper {
-      width: 90%;
-      margin: auto;
-      padding-top: 50px;
+  .contenedorContacto {
+    #local {
+      flex-wrap: wrap;
+      padding-top: 30px;
+      .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+      }
+    }
+    .contenedorFormulario {
+      .contact-wrapper {
+        .contact-info {
+          p {
+            padding: 1rem;
+            text-align: left;
+          }
+          ul {
+            padding: 1rem;
+            text-align: left;
+          }
+        }
+      }
     }
   }
 
@@ -196,8 +212,28 @@
         }
       }
     }
-    .formulario {
-      width: 90%;
+    .contenedorFormulario {
+      display: flex;
+      flex-direction: column;
+      .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        .contact-form {
+          form {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .contact-form,
+        .contact-info {
+          padding: 2rem;
+        }
+        .contact-info p,
+        .contact-info ul {
+          padding: 1rem;
+          text-align: left;
+        }
+      }
     }
   }
 }
@@ -282,6 +318,13 @@
         }
       }
     }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -498,14 +541,16 @@
         }
       }
     }
+    .contenedorFormulario {
+      padding: 1.5rem 0;
+      .marca {
+        font-size: 2rem;
+      }
+      .contact-wrapper {
+        padding: 1rem 0;
+      }
+    }
   }
 
-  // FOOTER
-
-  footer {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
+  
 }

@@ -61,7 +61,7 @@ form .btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer"; }
 
 /* ===== GLOBALES ===== */
 body {
@@ -198,7 +198,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer"; }
 
 /*    MAPAS      */
 form .btn {
@@ -395,7 +395,7 @@ form .btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer"; }
 
 /*    MAPAS      */
 form .btn {
@@ -549,7 +549,7 @@ form .btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer"; }
 
 /*    MAPAS      */
 form .btn {
@@ -670,7 +670,7 @@ form .btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer"; }
 
 /*    MAPAS      */
 form .btn {
@@ -835,7 +835,7 @@ form .btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          forumalario" "footer          footer              footer"; }
+  grid-template-areas: "header			     header   	         header" "portada         portada             portada" "zona1           zona1               zona1" "formulario      formulario          formulario" "footer          footer              footer"; }
 
 /*    MAPAS      */
 form .btn {
@@ -866,35 +866,98 @@ form .btn {
 
 .contenedorContacto #local {
   grid-area: zona1;
-  padding-bottom: 1.875rem;
-  align-items: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f2ec;
+  padding: 30px 0; }
   .contenedorContacto #local .mapa {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; }
   .contenedorContacto #local .wrapper {
     padding-left: 20px; }
 
-.contenedorContacto .formulario {
+.contenedorContacto .contenedorFormulario {
   grid-area: formulario;
-  width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 1.5rem; }
+  .contenedorContacto .contenedorFormulario .marca {
+    text-align: center;
+    font-size: 3rem;
+    color: green; }
+  .contenedorContacto .contenedorFormulario .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 0 20px 0 rgba(59, 53, 53, 0.3);
+    padding: 1rem; }
+    .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form {
+      padding: 32px; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 30px; }
+        .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form p {
+          margin: 0;
+          padding: 1rem; }
+        .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form input,
+        .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form textarea,
+        .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form button {
+          width: 100%;
+          padding: 0.7rem;
+          border: none;
+          border-radius: 5px;
+          background: none;
+          border-bottom: 2px solid #b7c3ad;
+          outline: none; }
+        .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form button {
+          background-color: green;
+          color: #fff;
+          border: 0;
+          text-transform: uppercase;
+          padding: 1rem; }
+          .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form button:hover {
+            background-color: #456135;
+            color: greenyellow;
+            transition: background-color 1s ease-out;
+            outline: 0; }
+        .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form .block {
+          grid-column: 1/3; }
+    .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info {
+      background-color: #b7c3ad;
+      border-radius: 5px;
+      padding: 32px; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p, .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
+        text-align: center;
+        margin: 0 0 1rem 0;
+        color: #000; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
+        list-style: none;
+        padding: 0; }
+        .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul li {
+          padding: .3rem; }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XL       --*/
 /*-- ========================================= --*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   section .banner {
     background-position: center; }
   /* Capacitaciones.html */
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
     flex-flow: nowrap; }
   /* Contacto.html  */
-  #local {
+  .contenedorContacto #local {
     flex-wrap: wrap;
     padding-top: 30px; }
-    #local .wrapper {
+    .contenedorContacto #local .wrapper {
       width: 90%;
       margin: auto;
       padding-top: 50px; }
+  .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p {
+    padding: 1rem;
+    text-align: left; }
+  .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
+    padding: 1rem;
+    text-align: left; }
   .container-fluid .destacadoBLog1 {
     height: 40%; } }
 
@@ -973,8 +1036,21 @@ form .btn {
     .contenedorContacto #local .wrapper .ubicacion,
     .contenedorContacto #local .wrapper .ubicacionTexto {
       text-align: center; }
-  .contenedorContacto .formulario {
-    width: 90%; } }
+  .contenedorContacto .contenedorFormulario {
+    display: flex;
+    flex-direction: column; }
+    .contenedorContacto .contenedorFormulario .contact-wrapper {
+      display: flex;
+      flex-direction: column; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form {
+        display: flex;
+        flex-direction: column; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form,
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info {
+        padding: 2rem; }
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p, .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
+        padding: 1rem;
+        text-align: left; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA SM      --*/
@@ -1008,7 +1084,12 @@ form .btn {
   .contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--parrafo {
     padding: 0 0; }
   .contenedorAbout .containerNosotros .box3 .containerFoto .imagen {
-    width: 55%; } }
+    width: 55%; }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; } }
 
 /*-- ========================================= -- */
 /*--      MEDIA QUERYS PANTALLA ADICIONAL      --*/
@@ -1095,8 +1176,9 @@ form .btn {
     color: #fff; }
   .contenedorContacto .portada .bannerContacto .wrap .box .textoBanner {
     display: none; }
-  footer {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center; } }
+  .contenedorContacto .contenedorFormulario {
+    padding: 1.5rem 0; }
+    .contenedorContacto .contenedorFormulario .marca {
+      font-size: 2rem; }
+    .contenedorContacto .contenedorFormulario .contact-wrapper {
+      padding: 1rem 0; } }

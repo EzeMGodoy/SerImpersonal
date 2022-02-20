@@ -21,13 +21,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <!-- Animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- BOOTSTRAP ICONS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
     />
-    <!-- My CSS -->
-    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+    
 
     <!-- LINK SASS -->
     <link rel="stylesheet" href="../css/estilos.css" />
@@ -127,7 +131,7 @@
       <!--                 Mapa                      -->
       <!-- ========================================= -->
 
-      <div id="local" class="container pt-5 d-flex justify-content-center">
+      <div id="local" class="container">
         <div class="mapa">
           <img
             src="../img/mapaContacto.jpeg"
@@ -151,63 +155,55 @@
       <!--                 Formulario                -->
       <!-- ========================================= -->
 
-      <section class="formulario d-flex justify-content-center">
-        <div class="contenedorFormulario">
-          <div id="titulo-formulario" class="text-center mb-4">
-            <p class="fs-3">Formulario de Contacto</p>
-            <p class="fs-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur, blanditiis dolorum ratione veritatis, sunt
-              dignissimos aspernatur aperiam totam id corrupti hic? Debitis
-              natus aut quasi doloribus obcaecati. Cumque, reprehenderit
-              recusandae.
-            </p>
-          </div>
-          <form>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="nombre@ejemplo.com"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Marcelo Gallardo"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="Telefono"
-                class="form-control"
-                id="tel"
-                placeholder="(2948) 35715987"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Escribe tu mensaje aquí..."
-              ></textarea>
-            </div>
-
-            <div class="mb-3">
-              <button type="button" class="btn w-100 fs-6">
-                Enviar mensaje
+      <div class="contenedorFormulario">
+        <p class="marca">Ser Impersonal</p>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <p class="fs-3">Contáctanos</p>
+            <form>
+              <p>
+                <label for="nombreCompleto">Nombre Completo</label>
+                <input type="text" name="nombreCompleto" id="nombreCompleto" required>
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+              </p>
+              <p>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" required>
+              </p>
+              <p>
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="asunto" required>
+              </p>
+              <p class="block">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="10" required></textarea>
+              </p>
+              <button class="block" type="submit">
+                Enviar
               </button>
-            </div>
-          </form>
+            </form>
+          </div>
+          <div class="contact-info">
+            <p>Más información</p>
+            <ul>
+              <li>
+                <i class="bi bi-geo-alt"> Los Arándanos 452</i>
+              </li>
+              <li>
+                <i class="bi bi-phone"> (351) 157 726 324</i>
+              </li>
+              <li>
+                <i class="bi bi-envelope"> serimpersonal@gmail.com</i>
+              </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cumque ipsa quos animi, neque eum quae sequi. Itaque, error nihil!</p>
+            <p>serimpersonal.com</p>
+          </div>
         </div>
-      </section>
+      </div>
 
       <!-- ========================================= -->
       <!--                 FOOTER                    -->
