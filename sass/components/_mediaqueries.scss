@@ -40,6 +40,15 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 992px) {
+
+  .contenedorIndex, .contenedorBlog, .contenedorNosotros, .contenedorContacto{
+    .portada{
+      .wrap{
+        padding-left: 50px;
+      }
+    }
+  }
+
   /* ABOUT.HTML */
 
   .contenedorAbout {

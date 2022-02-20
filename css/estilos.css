@@ -105,7 +105,6 @@ header {
 .portada {
   grid-area: portada; }
   .portada .banner .wrap {
-    max-width: 1000px;
     margin: 0 auto;
     height: 90%;
     display: flex;
@@ -962,6 +961,8 @@ form .btn {
 /*--            MEDIA QUERYS PANTALLA L        --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 992px) {
+  .contenedorIndex .portada .wrap, .contenedorBlog .portada .wrap, .contenedorNosotros .portada .wrap, .contenedorContacto .portada .wrap {
+    padding-left: 50px; }
   /* ABOUT.HTML */
   .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
     padding: 0 6.25rem; }
