@@ -114,7 +114,8 @@ header {
       flex-basis: 50%;
       color: #fff;
       text-align: left;
-      align-self: center; }
+      align-self: center;
+      padding-left: 50px; }
       .portada .banner .wrap .box .textoBanner1 {
         font-size: 1.125rem;
         letter-spacing: 2px;
@@ -961,8 +962,6 @@ form .btn {
 /*--            MEDIA QUERYS PANTALLA L        --*/
 /*-- ========================================= --*/
 @media screen and (max-width: 992px) {
-  .contenedorIndex .portada .wrap, .contenedorBlog .portada .wrap, .contenedorNosotros .portada .wrap, .contenedorContacto .portada .wrap {
-    padding-left: 50px; }
   /* ABOUT.HTML */
   .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
     padding: 0 6.25rem; }
@@ -987,8 +986,6 @@ form .btn {
       text-align: start; }
       .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
         font-size: 22px; }
-  .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
-    padding-left: 50px; }
   .contenedorAbout .containerNosotros .box1 {
     flex-flow: wrap; }
     .contenedorAbout .containerNosotros .box1 .boxTexto {
@@ -1059,10 +1056,6 @@ form .btn {
       .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesBoton {
         justify-content: center; }
   /* CAPACITACIONES */
-  .contenedorCapacitaciones section .bannerCapacitaciones .wrap .box {
-    width: 90%;
-    padding-left: 50px;
-    padding-top: 50px; }
   /* ABOUT.HTML */
   .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
     padding: 0 0; }
@@ -1143,28 +1136,22 @@ form .btn {
   .contenedorCapacitaciones .portada .banner,
   .contenedorContacto .portada .banner {
     background-position: 60% 60%; }
-    .contenedorCapacitaciones .portada .banner .wrap .box,
-    .contenedorContacto .portada .banner .wrap .box {
-      flex-basis: 100%;
-      color: #fff;
-      text-align: left;
-      align-self: center; }
-      .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1,
-      .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
-        font-size: 16px;
-        letter-spacing: 2px;
-        font-weight: 300; }
-      .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2,
-      .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
-        font-size: 20px;
-        line-height: 1.5;
-        padding-bottom: 10px; }
-      .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3,
-      .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
-        display: none; }
-      .contenedorCapacitaciones .portada .banner .wrap .box .botones,
-      .contenedorContacto .portada .banner .wrap .box .botones {
-        flex-flow: wrap; }
+    .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1,
+    .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: 300; }
+    .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2,
+    .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
+      font-size: 20px;
+      line-height: 1.5;
+      padding-bottom: 10px; }
+    .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3,
+    .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
+      display: none; }
+    .contenedorCapacitaciones .portada .banner .wrap .box .botones,
+    .contenedorContacto .portada .banner .wrap .box .botones {
+      flex-flow: wrap; }
   /* ABOUT.HTML */
   .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
     width: 320px; }

@@ -41,13 +41,7 @@
 
 @media screen and (max-width: 992px) {
 
-  .contenedorIndex, .contenedorBlog, .contenedorNosotros, .contenedorContacto{
-    .portada{
-      .wrap{
-        padding-left: 50px;
-      }
-    }
-  }
+
 
   /* ABOUT.HTML */
 
@@ -90,16 +84,7 @@
     }
   }
 
-  // section {
-  //   .banner {
-  //     background-position: center;
-  //     .wrap {
-  //       .box {
-  //         padding-left: 30px;
-  //       }
-  //     }
-  //   }
-  // }
+
 }
 
 /*-- ========================================= -- */
@@ -124,17 +109,17 @@
     }
   }
 
-  .contenedorCapacitaciones {
-    section {
-      .bannerCapacitaciones {
-        .wrap {
-          .box {
-            padding-left: 50px;
-          }
-        }
-      }
-    }
-  }
+  // .contenedorCapacitaciones {
+  //   section {
+  //     .bannerCapacitaciones {
+  //       .wrap {
+  //         .box {
+  //           padding-left: 50px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   .contenedorAbout {
     .containerNosotros {
@@ -257,19 +242,19 @@
   }
 
   /* CAPACITACIONES */
-  .contenedorCapacitaciones {
-    section {
-      .bannerCapacitaciones {
-        .wrap {
-          .box {
-            width: 90%;
-            padding-left: 50px;
-            padding-top: 50px;
-          }
-        }
-      }
-    }
-  }
+  // .contenedorCapacitaciones {
+  //   section {
+  //     .bannerCapacitaciones {
+  //       .wrap {
+  //         .box {
+  //           width: 90%;
+  //           padding-left: 50px;
+  //           padding-top: 50px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   /* ABOUT.HTML */
 
@@ -476,21 +461,16 @@
         background-position: 60% 60%;
         .wrap {
           .box {
-            flex-basis: 100%;
-            color: #fff;
-            text-align: left;
-            align-self: center;
+            // flex-basis: 100%;
+            // color: #fff;
+            // text-align: left;
+            // align-self: center;
             .textoBanner1 {
               font-size: 16px;
               letter-spacing: 2px;
               font-weight: 300;
             }
-            // .contactoPonte {
-            //   color: #000;
-            //   font-weight: bold;
-            //   background-color: #fff;
-            //   display: inline-block;
-            // }
+            
             .textoBanner2 {
               font-size: 20px;
               line-height: 1.5;

@@ -70,11 +70,14 @@ header {
       display: flex;
       flex-flow: row wrap;
       justify-content: left;
+      // background-color: blue;
       .box {
         flex-basis: 50%;
         color: #fff;
         text-align: left;
         align-self: center;
+        padding-left: 50px;
+        // background-color: red;
 
         .textoBanner1 {
           font-size: 1.125rem;
