@@ -109,12 +109,18 @@
         }
       }
       .contact-info {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        gap: 20px;
         background-color: $color-headerFooter;
         border-radius: 5px;
         padding: 32px;
+        
         p, ul{
-          text-align: center;
-          margin: 0 0 1rem 0;
+          text-align: left;
+          // margin: 0 0 1rem 0;
           color: #000;
         }
         ul{

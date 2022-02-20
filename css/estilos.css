@@ -927,12 +927,15 @@ form .btn {
         .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form .block {
           grid-column: 1/3; }
     .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       background-color: #b7c3ad;
       border-radius: 5px;
       padding: 32px; }
       .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p, .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
-        text-align: center;
-        margin: 0 0 1rem 0;
+        text-align: left;
         color: #000; }
       .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
         list-style: none;
@@ -952,12 +955,6 @@ form .btn {
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
     flex-flow: nowrap; }
   /* Contacto.html  */
-  .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p {
-    padding: 1rem;
-    text-align: left; }
-  .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
-    padding: 1rem;
-    text-align: left; }
   .container-fluid .destacadoBLog1 {
     height: 40%; } }
 
@@ -975,10 +972,8 @@ form .btn {
   .contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--parrafo {
     padding: 0 6.25rem; }
   /* CONTACTO */
-  section .banner {
-    background-position: center; }
-    section .banner .wrap .box {
-      padding-left: 30px; } }
+  .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info {
+    padding: 20px; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA M       --*/
@@ -1037,21 +1032,12 @@ form .btn {
     padding: 0 30px; }
     .contenedorContacto #local .wrapper .ubicacion {
       text-align: center; }
-  .contenedorContacto .contenedorFormulario {
+  .contenedorContacto .contenedorFormulario .contact-wrapper {
     display: flex;
     flex-direction: column; }
-    .contenedorContacto .contenedorFormulario .contact-wrapper {
+    .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form {
       display: flex;
-      flex-direction: column; }
-      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form form {
-        display: flex;
-        flex-direction: column; }
-      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-form,
-      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info {
-        padding: 2rem; }
-      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p, .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
-        padding: 1rem;
-        text-align: left; } }
+      flex-direction: column; } }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA SM      --*/
@@ -1099,14 +1085,22 @@ form .btn {
 @media screen and (max-width: 480px) {
   /* INDEX.HTML*/
   /* CAPACITACIONES */
-  .contenedorIndex .portada .banner .wrap .box .textoBanner1, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1, .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
+  .contenedorIndex .portada .banner .wrap .box .textoBanner1,
+  .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1,
+  .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
     font-size: 22px; }
-  .contenedorIndex .portada .banner .wrap .box .textoBanner2, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2, .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
+  .contenedorIndex .portada .banner .wrap .box .textoBanner2,
+  .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2,
+  .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
     font-size: 26px;
     line-height: 1.5; }
-  .contenedorIndex .portada .banner .wrap .box .textoBanner3, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3, .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
+  .contenedorIndex .portada .banner .wrap .box .textoBanner3,
+  .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3,
+  .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
     display: none; }
-  .contenedorIndex .portada .banner .wrap .box .botones, .contenedorCapacitaciones .portada .banner .wrap .box .botones, .contenedorContacto .portada .banner .wrap .box .botones {
+  .contenedorIndex .portada .banner .wrap .box .botones,
+  .contenedorCapacitaciones .portada .banner .wrap .box .botones,
+  .contenedorContacto .portada .banner .wrap .box .botones {
     flex-flow: nowrap; }
   /* ABOUT.HTML*/
   .contenedorAbout .containerNosotros .box1 .containerFoto {
