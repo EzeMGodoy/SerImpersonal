@@ -40,9 +40,6 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 992px) {
-
-
-
   /* ABOUT.HTML */
 
   .contenedorAbout {
@@ -83,8 +80,6 @@
       }
     }
   }
-
-
 }
 
 /*-- ========================================= -- */
@@ -93,7 +88,24 @@
 
 @media screen and (max-width: 768px) {
   .contenedorIndex {
-    font-size: 16px;
+    .zona2 {
+      #equipo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .equipoTitulo {
+          text-align: center;
+          margin-bottom: 15px;
+          font-size: 1.75rem;
+          font-weight: bold;
+        }
+        .equipoDescripcion {
+          padding-left: 30px;
+        }
+      }
+    }
     .destacado {
       .capacitacionesColumna {
         width: 85%;
@@ -306,26 +318,19 @@
 
 @media screen and (max-width: 480px) {
   /* INDEX.HTML*/
-  // .contenedorIndex {
-  //   .portada {
-  //     .bannerIndex {
-  //       .wrap {
-  //         .box {
-  //           .textoBanner1 {
-  //             font-size: 22px;
-  //           }
-  //           .textoBanner2 {
-  //             font-size: 26px;
-  //             line-height: 1.5;
-  //           }
-  //           .textoBanner3 {
-  //             display: none;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .contenedorIndex {
+    .zona2 {
+      width: 90%;
+      padding: 30px 10px;
+      #equipo {
+        .equipoDescripcion {
+          width: 100%;
+          // padding-left: 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
 
   /* CAPACITACIONES */
   .contenedorIndex,
@@ -470,7 +475,7 @@
               letter-spacing: 2px;
               font-weight: 300;
             }
-            
+
             .textoBanner2 {
               font-size: 20px;
               line-height: 1.5;

@@ -3,7 +3,6 @@
 @import "../components/extends";
 @import "../components/maps";
 
-
 /* ============================================= */
 /*                INDEX.HTML                     */
 /* ============================================= */
@@ -60,11 +59,17 @@
   }
   .zona2 {
     grid-area: zona2;
-    display: grid;
-    place-content: center;
+    width: 80%;
+    border-radius: 20px;
+    padding: 30px 50px;
+    background-color: #d6d2cd;
+    margin: 0 auto;
+
     #equipo {
-      width: 75%;
-      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       .equipoTitulo {
         text-align: center;
         margin-bottom: 15px;
@@ -72,7 +77,7 @@
         font-weight: bold;
       }
       .equipoDescripcion {
-        text-align: center;
+        padding-left: 30px;
       }
     }
   }
@@ -117,7 +122,7 @@
         }
         .capacitacionesBoton {
           display: flex;
-          justify-content:flex-end;
+          justify-content: flex-end;
           align-content: center;
           text-align: center;
           .botonSeguir {
