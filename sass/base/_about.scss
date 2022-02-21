@@ -9,7 +9,7 @@
 
 .contenedorAbout {
   @extend %contenedorAbout;
-  background-color: #5E748F;
+  background-color: #5e748f;
   .portada {
     .bannerAbout {
       @include bannerMedidas;
@@ -18,8 +18,6 @@
   }
   .containerNosotros {
     grid-area: contenido;
-    // width: 70%;
-    // margin: 0 auto;
     .box1 {
       display: flex;
       .boxTexto {
@@ -41,17 +39,15 @@
           text-align: center;
         }
       }
-      .containerFoto{
-        img{
+      .containerFoto {
+        img {
           max-height: 37.5rem;
-          // object-fit: contain;
           width: 100%;
           height: 100%;
         }
-        .divAraceli{
+        .divAraceli {
           display: none;
         }
-        
       }
     }
     .box2 {
@@ -62,16 +58,11 @@
         "aside     parrafo   columnaColor"
         "aside     parrafo   columnaColor"
         "aside     parrafo   columnaColor";
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // column-count: 3;
-      
+
       background-color: red;
       .asideNosotros {
         grid-area: aside;
-        // padding: 180px 180px;
-        background-color: #5E8C8F;
+        background-color: #5e8c8f;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,7 +73,6 @@
           font-size: 3rem;
           font-weight: bold;
           color: #000;
-          
         }
       }
       .parrafoNosotros {
@@ -98,15 +88,14 @@
           padding-top: 1.25rem;
         }
         .boxTexto--parrafo {
-          // padding: 0 180px;
           text-align: center;
         }
       }
       .columnaColor {
         grid-area: columnaColor;
         display: flex;
-        // padding: 180px 180px;
-        background-color: #5E8C8F;
+
+        background-color: #5e8c8f;
       }
     }
 
@@ -114,12 +103,12 @@
       display: flex;
       flex-direction: row-reverse;
       .boxTexto {
-        background-color:  #748f5e;
+        background-color: #748f5e;
         width: 75%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
+
         .boxTexto--titulo {
           color: #fff;
           font-size: 1.5rem;
@@ -132,17 +121,15 @@
           text-align: center;
         }
       }
-      .containerFoto{
-        img{
+      .containerFoto {
+        img {
           max-height: 37.5rem;
-          // object-fit: contain;
           width: 100%;
           height: 100%;
         }
-        .divFabricio{
+        .divFabricio {
           display: none;
         }
-       
       }
     }
   }

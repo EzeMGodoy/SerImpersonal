@@ -694,7 +694,7 @@ form .btn {
 /*--                   ABOUT.HTML              --*/
 /*-- ========================================= --*/
 .contenedorAbout {
-  background-color: #5E748F; }
+  background-color: #5e748f; }
   .contenedorAbout .portada .bannerAbout {
     display: flex;
     max-width: 100%;
@@ -737,7 +737,7 @@ form .btn {
       background-color: red; }
       .contenedorAbout .containerNosotros .box2 .asideNosotros {
         grid-area: aside;
-        background-color: #5E8C8F;
+        background-color: #5e8c8f;
         display: flex;
         justify-content: center;
         align-items: center; }
@@ -764,7 +764,7 @@ form .btn {
       .contenedorAbout .containerNosotros .box2 .columnaColor {
         grid-area: columnaColor;
         display: flex;
-        background-color: #5E8C8F; }
+        background-color: #5e8c8f; }
     .contenedorAbout .containerNosotros .box3 {
       display: flex;
       flex-direction: row-reverse; }
@@ -938,14 +938,15 @@ form .btn {
       background-color: #b7c3ad;
       border-radius: 5px;
       padding: 32px; }
-      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p, .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info p,
+      .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
         text-align: left;
         color: #000; }
       .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul {
         list-style: none;
         padding: 0; }
         .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info ul li {
-          padding: .3rem; }
+          padding: 0.3rem; }
       .contenedorContacto .contenedorFormulario .contact-wrapper .contact-info .page {
         color: #fff; }
 
