@@ -18,7 +18,7 @@
           color: #fff;
           display: flex;
           flex-direction: column;
-          padding-top: 50px;
+          padding-top: 3.125rem;
           .nuestro {
             font-size: 1.5rem;
           }
@@ -60,7 +60,7 @@
     .textoIntro {
       text-align: center;
       font-size: 1.5rem;
-      padding: 15px;
+      padding: 0.9375rem;
     }
   }
   .contenidoCapacitaciones {
@@ -68,7 +68,7 @@
     margin: 0 auto;
     width: 90%;
     padding: 60px 0;
-    max-width: 1200px;
+    max-width: 75rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -76,8 +76,8 @@
     flex-wrap: wrap;
     .tarjetaItem {
       padding-bottom: 3em;
-      flex-basis: 280px;
-      max-width: 450px;
+      flex-basis: 17.5rem;
+      max-width: 28.125rem;
       flex-grow: 1;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,

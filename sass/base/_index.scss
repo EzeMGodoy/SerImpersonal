@@ -60,8 +60,8 @@
   .zona2 {
     grid-area: zona2;
     width: 80%;
-    border-radius: 20px;
-    padding: 30px 50px;
+    border-radius: 1.25rem;
+    padding: 1.875rem 3.125rem;
     background-color: #d6d2cd;
     margin: 0 auto;
 
@@ -72,7 +72,7 @@
 
       .equipoTitulo {
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
         font-size: 1.75rem;
         font-weight: bold;
       }
@@ -138,43 +138,5 @@
   }
 }
 
-section {
-  #equipo {
-    @media screen and (max-width: 768px) {
-      width: 90% !important;
-    }
-  }
-}
 
-.container-fluid {
-  .capacitaciones-columna {
-    @media screen and (max-width: 768px) {
-      width: 100% !important;
-      // text-align: left;
-    }
-    .carta {
-      .mt-4 {
-        a {
-          div {
-            button {
-              @include btn-seguirleyendo;
-              &:hover {
-                background-color: $background-botones;
-              }
-            }
-          }
-        }
-      }
-      @media screen and (max-width: 576px) {
-        flex-wrap: wrap;
-        justify-content: center !important;
-        text-align: center;
-      }
-      a {
-        img {
-          @include cartaEfecto;
-        }
-      }
-    }
-  }
-}
+
