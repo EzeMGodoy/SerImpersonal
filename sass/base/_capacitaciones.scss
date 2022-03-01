@@ -18,13 +18,11 @@
           color: #fff;
           display: flex;
           flex-direction: column;
-          padding-top: 3.125rem;
-          .nuestro {
-            font-size: 1.5rem;
+          .textoBanner1{
+            color: $color-principal;
           }
           .botones {
             display: flex;
-            justify-content: center;
             margin-top: 7px;
             flex-flow: row wrap;
             gap: 5px;

@@ -3,12 +3,6 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 1400px) {
-  section {
-    .banner {
-      background-position: center;
-    }
-  }
-
   /* Capacitaciones.html */
 
   .contenedorCapacitaciones {
@@ -24,15 +18,6 @@
       }
     }
   }
-
-  /* Contacto.html  */
-
-  // BLOG
-  .container-fluid {
-    .destacadoBLog1 {
-      height: 40%;
-    }
-  }
 }
 
 /*-- ========================================= -- */
@@ -40,12 +25,21 @@
 /*-- ========================================= --*/
 
 @media screen and (max-width: 992px) {
+  /* INDEX.HTML */
+
+  .contenedorIndex {
+    .zona2 {
+      .equipo {
+        flex-direction: column;
+      }
+    }
+  }
+
   /* ABOUT.HTML */
 
   .contenedorAbout {
     .containerNosotros {
       .box1 {
-        // flex-flow: wrap;
         .boxTexto {
           .boxTexto--parrafo {
             padding: 0 6.25rem;
@@ -59,7 +53,6 @@
         }
       }
       .box3 {
-        // flex-flow: wrap;
         .boxTexto {
           .boxTexto--parrafo {
             padding: 0 6.25rem;
@@ -69,12 +62,39 @@
     }
   }
 
+  /* BLOG.HTML*/
+  .contenedorBlog {
+    .contenidoBlog {
+      .contenedorDestacado {
+        width: 50%;
+        a {
+          flex-direction: column;
+
+          .contenedorImgdestacado {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
   /* CONTACTO */
 
   .contenedorContacto {
+    .local {
+      .wrapper {
+        width: 100%;
+        padding: 20px;
+        .ubicacion {
+          text-align: center;
+        }
+      }
+    }
     .contenedorFormulario {
-      .contact-wrapper {
-        .contact-info {
+      .contactWrapper {
+        .contactInfo {
           padding: 20px;
         }
       }
@@ -89,18 +109,7 @@
 @media screen and (max-width: 768px) {
   .contenedorIndex {
     .zona2 {
-      #equipo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .equipoTitulo {
-          text-align: center;
-          margin-bottom: 15px;
-          font-size: 1.75rem;
-          font-weight: bold;
-        }
+      .equipo {
         .equipoDescripcion {
           padding-left: 0px;
         }
@@ -121,17 +130,18 @@
     }
   }
 
-  // .contenedorCapacitaciones {
-  //   section {
-  //     .bannerCapacitaciones {
-  //       .wrap {
-  //         .box {
-  //           padding-left: 50px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .contenedorBlog {
+    .contenidoBlog {
+      .contenedorDestacado {
+        flex-flow: column;
+        .contenedorImgdestacado {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 
   .contenedorAbout {
     .containerNosotros {
@@ -196,7 +206,7 @@
   /* CONTACTO.HTML*/
 
   .contenedorContacto {
-    #local {
+    .local {
       .wrapper {
         width: 100%;
         padding: 0 30px;
@@ -206,10 +216,10 @@
       }
     }
     .contenedorFormulario {
-      .contact-wrapper {
+      .contactWrapper {
         display: flex;
         flex-direction: column;
-        .contact-form {
+        .contactForm {
           form {
             display: flex;
             flex-direction: column;
@@ -253,20 +263,36 @@
     }
   }
 
-  /* CAPACITACIONES */
-  // .contenedorCapacitaciones {
-  //   section {
-  //     .bannerCapacitaciones {
-  //       .wrap {
-  //         .box {
-  //           width: 90%;
-  //           padding-left: 50px;
-  //           padding-top: 50px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  /* BLOG.html*/
+
+  .contenedorBlog {
+    .contenidoBlog {
+      .contenedorDestacado {
+        width: 93%;
+        a {
+          flex-direction: column;
+
+          .contenedorImgdestacado {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .asideBlog {
+      aside {
+        flex-direction: column;
+        .asideTexto {
+          text-align: center;
+          .asideTitulo {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
 
   /* ABOUT.HTML */
 
@@ -325,21 +351,21 @@
       #equipo {
         .equipoDescripcion {
           width: 100%;
-          // padding-left: 0px;
           text-align: center;
         }
       }
     }
   }
 
-  /* CAPACITACIONES */
   .contenedorIndex,
   .contenedorCapacitaciones,
+  .contenedorAbout,
   .contenedorContacto {
     .portada {
       .banner {
         .wrap {
           .box {
+            flex-basis: 100%;
             .textoBanner1 {
               font-size: 22px;
             }
@@ -354,6 +380,18 @@
             .botones {
               flex-flow: nowrap;
             }
+          }
+        }
+      }
+    }
+  }
+
+  .contenedorBlog {
+    .portada {
+      .banner {
+        .wrap {
+          .box {
+            flex-basis: 80%;
           }
         }
       }
@@ -397,7 +435,7 @@
   /* CONTACTO.HTML*/
 
   .contenedorContacto {
-    #local {
+    .local {
       .mapa {
         img {
           width: 300px;
@@ -427,7 +465,7 @@
       }
     }
     .zona2 {
-      #equipo {
+      .equipo {
         .equipoTitulo {
           font-size: 18px;
         }
@@ -466,16 +504,10 @@
         background-position: 60% 60%;
         .wrap {
           .box {
-            // flex-basis: 100%;
-            // color: #fff;
-            // text-align: left;
-            // align-self: center;
             .textoBanner1 {
               font-size: 16px;
               letter-spacing: 2px;
-              font-weight: 300;
             }
-
             .textoBanner2 {
               font-size: 20px;
               line-height: 1.5;
@@ -488,6 +520,21 @@
             .botones {
               flex-flow: wrap;
             }
+          }
+        }
+      }
+    }
+  }
+
+  /*BLOG.HTML*/
+
+  .contenedorBlog {
+    .contenidoBlog {
+      .contenedorDestacado {
+        .textoDestacado {
+          padding: 20px 10px;
+          .textoTitulo {
+            font-size: 19px;
           }
         }
       }
@@ -531,21 +578,7 @@
   /* CONTACTO.HTML */
 
   .contenedorContacto {
-    .portada {
-      .bannerContacto {
-        .wrap {
-          .box {
-            span {
-              color: #fff;
-            }
-            .textoBanner {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-    #local {
+    .local {
       .wrapper {
         .ubicacion {
           font-size: 18px;
@@ -558,9 +591,9 @@
       .marca {
         font-size: 2rem;
       }
-      .contact-wrapper {
+      .contactWrapper {
         padding: 1rem 0;
-        .contact-info {
+        .contactInfo {
           ul {
             padding: 0;
           }

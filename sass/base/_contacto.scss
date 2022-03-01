@@ -15,16 +15,17 @@
       background-image: url(../img/laSerranita.jpg);
     }
   }
-  #local {
+  .local {
     grid-area: zona1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     // align-items:center;
     flex-flow: wrap-reverse;
     background-color: #f7f2ec;
     padding: 50px 0;
     .wrapper {
       width: 50%;
+      padding-left: 30px;
       .ubicacion {
         font-size: 22px;
         font-weight: bold;
@@ -49,12 +50,12 @@
       font-size: 3rem;
       color: $color-principal;
     }
-    .contact-wrapper {
+    .contactWrapper {
       display: grid;
       grid-template-columns: 2fr 1fr;
       box-shadow: 0 0 20px 0 rgba(59, 53, 53, 0.3);
       padding: 1rem;
-      .contact-form {
+      .contactForm {
         padding: 32px;
         form {
           display: grid;
@@ -93,7 +94,7 @@
           }
         }
       }
-      .contact-info {
+      .contactInfo {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -116,6 +117,22 @@
         }
         .page {
           color: #fff;
+        }
+        .contactTexto{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .contactTexto1{
+            font-size: 18px;
+            font-weight: 600;
+            text-align:center;
+          }
+          .contactTexto2{
+            font-size: 14px;
+            text-align: center;
+            
+          }
         }
       }
     }

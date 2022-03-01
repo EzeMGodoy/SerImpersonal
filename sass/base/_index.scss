@@ -17,8 +17,8 @@
   }
   .zona1 {
     grid-area: zona1;
-    display: grid;
-    place-content: center;
+    // display: grid;
+    // place-content: center;
     padding-top: 1.25rem;
     .csb {
       text-align: center;
@@ -65,7 +65,7 @@
     background-color: #d6d2cd;
     margin: 0 auto;
 
-    #equipo {
+    .equipo {
       display: flex;
       justify-content: center;
       align-items: center;

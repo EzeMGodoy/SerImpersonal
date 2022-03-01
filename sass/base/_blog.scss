@@ -8,90 +8,139 @@
 /*-- ========================================= --*/
 
 .contenedorBlog {
- @extend %contenedorBlog;
-  .portada{
-   .bannerAbout{
-     @include bannerMedidas;
-     background-image: url(../img/portadaNosotros.jpg);
-   }
- }
- #intro{
-   grid-area: zona1;
- }
- .contenidoBlog{
-   grid-area: destacado;
-   .asideBlog{
-     grid-area: aside;
-   }
- }
-}
-
-.container-fluid {
-  .destacadoBlog1 {
-    animation-name: aparecer;
-    animation-duration: 1.8s;
-    position: relative;
-    animation-timing-function: linear;
-    @keyframes aparecer {
-      0% {
-        left: -100%;
-      }
-      25% {
-        left: -75%;
-      }
-      50% {
-        left: -50%;
-      }
-      75% {
-        left: -25%;
-      }
-      100% {
-        left: 0%;
-      }
-    }
-    section {
-      .card {
-        @extend %tarjetas;
-      }
+  @extend %contenedorBlog;
+  .portada {
+    .bannerAbout {
+      @include bannerMedidas;
+      background-image: url(../img/portadaNosotros.jpg);
     }
   }
-}
+  .intro {
+    grid-area: zona1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    .introTitulo {
+      font-size: 32px;
+    }
+    .introTexto {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  .contenidoBlog {
+    grid-area: destacado;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.row {
-  div {
-    .card {
+    div {
+      .articuloDestacado {
+        text-align: center;
+        font-size: 32px;
+      }
+    }
+    .contenedorDestacado {
+      border: 1px solid #dff;
       @extend %tarjetas;
-    }
-  }
-}
-
-.asideBlog {
-  background-color: rgb(66, 70, 66);
-  aside {
-    .col {
-      img {
-        border-radius: 40%;
-        height: 10em;
-        width: 10em;
+      animation-name: aparecer;
+      animation-duration: 2s;
+      position: relative;
+      animation-timing-function: linear;
+      @keyframes aparecer {
+        0% {
+          left: -100%;
+        }
+        25% {
+          left: -75%;
+        }
+        50% {
+          left: -50%;
+        }
+        75% {
+          left: -25%;
+        }
+        100% {
+          left: 0%;
+        }
       }
-    }
-    .col-12 {
-      .botones {
-        .boton1 {
-          @extend %botonesPodcast;
-          color: #fff;
-          margin-right: 1.25rem;
-          &:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+      a{
+        display: flex;
+        
+        .contenedorImgdestacado {   
+          
+          img {
+            width: 400px;
+            display: block;
           }
         }
-        .boton2 {
-          @extend %botonesPodcast;
-          color: #000;
-          background-color: #fff;
-          &:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+
+        .textoDestacado {
+          padding: 20px;
+          background-color: rgb(194, 190, 152);
+          .textoTitulo {
+            font-size: 24px;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+    .articulosSecundarios {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+      div {
+        margin-bottom: 20px;
+        .card {
+          @extend %tarjetas;
+        }
+      }
+    }
+  }
+  .asideBlog {
+    grid-area: aside;
+    background-color: rgb(66, 70, 66);
+    aside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.875rem;
+      padding: 3rem 0;
+      .microfonoAside {
+        img {
+          border-radius: 40%;
+          height: 10em;
+          width: 10em;
+        }
+      }
+      .asideTexto {
+        .asideTitulo {
+          color: #fff;
+          font-size: 1.75rem;
+        }
+        p {
+          color: #fff;
+        }
+        .botones {
+          .boton1 {
+            @extend %botonesPodcast;
             color: #fff;
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.3);
+            }
+          }
+          .boton2 {
+            @extend %botonesPodcast;
+            color: #000;
+            background-color: #fff;
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.3);
+              color: #fff;
+            }
           }
         }
       }
