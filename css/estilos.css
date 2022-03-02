@@ -212,8 +212,8 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/bannerIndex.webp);
-  background-color: #131333; }
+  background-color: #131333;
+  background-image: url(../img/bannerIndex.webp); }
 
 .contenedorIndex .zona1 {
   grid-area: zona1;

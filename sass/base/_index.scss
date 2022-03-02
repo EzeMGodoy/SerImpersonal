@@ -12,8 +12,8 @@
   .portada {
     .bannerIndex {
       @include bannerMedidas;
-      background-image: url(../../img/bannerIndex.webp);
       background-color: rgb(19, 19, 51);
+      background-image: url(../img/bannerIndex.webp);
     }
   }
   .zona1 {
