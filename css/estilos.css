@@ -212,7 +212,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/bannerIndex.webp); }
+  background-image: url(../img/bannerIndex.webp); }
 
 .contenedorIndex .zona1 {
   grid-area: zona1;
@@ -682,7 +682,7 @@ form .btn {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../../img/portadaNosotros.webp); }
+    background-image: url(../img/portadaNosotros.webp); }
   .contenedorAbout .containerNosotros {
     grid-area: contenido; }
     .contenedorAbout .containerNosotros .box1 {
@@ -838,7 +838,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/laSerranita.webp); }
+  background-image: url(../img/laSerranita.webp); }
 
 .contenedorContacto .local {
   grid-area: zona1;
