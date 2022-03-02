@@ -527,7 +527,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/bannerBlog3.webp); }
+  background-image: url(../img/bannerBlog3.webp); }
 
 .contenedorBlog .intro {
   grid-area: zona1;
@@ -688,7 +688,7 @@ form .btn {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/portadaNosotros.webp); }
+    background-image: url(../img/bannerAbout.webp); }
   .contenedorAbout .containerNosotros {
     grid-area: contenido; }
     .contenedorAbout .containerNosotros .box1 {
