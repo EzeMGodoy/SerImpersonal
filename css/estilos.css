@@ -212,7 +212,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/bannerIndex.jpg); }
+  background-image: url(../../img/bannerIndex.webp); }
 
 .contenedorIndex .zona1 {
   grid-area: zona1;
@@ -376,7 +376,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/bannerCapacitaciones1.jpg); }
+  background-image: url(../img/bannerCapacitaciones1.webp); }
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box {
     color: #fff;
     display: flex;
@@ -521,7 +521,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/portadaNosotros.jpg); }
+  background-image: url(../img/portadaNosotros.webp); }
 
 .contenedorBlog .intro {
   grid-area: zona1;
@@ -682,7 +682,7 @@ form .btn {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/portadaNosotros.jpg); }
+    background-image: url(../../img/portadaNosotros.webp); }
   .contenedorAbout .containerNosotros {
     grid-area: contenido; }
     .contenedorAbout .containerNosotros .box1 {
@@ -838,7 +838,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/laSerranita.jpg); }
+  background-image: url(../../img/laSerranita.webp); }
 
 .contenedorContacto .local {
   grid-area: zona1;
