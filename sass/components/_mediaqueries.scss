@@ -2,7 +2,7 @@
 /*--            MEDIA QUERYS PANTALLA XL       --*/
 /*-- ========================================= --*/
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   /* Capacitaciones.html */
 
   .contenedorCapacitaciones {
@@ -20,6 +20,33 @@
   }
 }
 
+/* ABOUT.HTML */
+
+.contenedorAbout {
+  .containerNosotros {
+    .box1 {
+      .boxTexto {
+        .boxTexto--parrafo {
+          padding: 0 15px;
+        }
+      }
+    }
+    .box2 {
+      display: flex;
+      .columnaColor {
+        display: none;
+      }
+    }
+    .box3 {
+      .boxTexto {
+        .boxTexto--parrafo {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA L        --*/
 /*-- ========================================= --*/
@@ -31,33 +58,6 @@
     .zona2 {
       .equipo {
         flex-direction: column;
-      }
-    }
-  }
-
-  /* ABOUT.HTML */
-
-  .contenedorAbout {
-    .containerNosotros {
-      .box1 {
-        .boxTexto {
-          .boxTexto--parrafo {
-            padding: 0 6.25rem;
-          }
-        }
-      }
-      .box2 {
-        display: flex;
-        .columnaColor {
-          display: none;
-        }
-      }
-      .box3 {
-        .boxTexto {
-          .boxTexto--parrafo {
-            padding: 0 6.25rem;
-          }
-        }
       }
     }
   }
@@ -374,9 +374,6 @@
               font-size: 26px;
               line-height: 1.5;
             }
-            .textoBanner3 {
-              display: none;
-            }
             .botones {
               flex-flow: nowrap;
             }
@@ -495,15 +492,16 @@
     }
   }
 
-  /* CAPACITACIONES */
+  /* GENERALES */
 
-  .contenedorCapacitaciones,
+  .contenedorIndex, .contenedorCapacitaciones, .contenedorBlog, .contenedorAbout,
   .contenedorContacto {
     .portada {
       .banner {
         background-position: 60% 60%;
         .wrap {
           .box {
+            padding: 0 10px;
             .textoBanner1 {
               font-size: 16px;
               letter-spacing: 2px;
@@ -544,6 +542,17 @@
   /* ABOUT.HTML */
 
   .contenedorAbout {
+    .portada{
+      .banner{
+        .wrap{
+          .box{
+            .textoBanner2{
+              display: none;
+            }
+          }
+        }
+      }
+    }
     .containerNosotros {
       .box1 {
         .containerFoto {

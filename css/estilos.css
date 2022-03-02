@@ -86,12 +86,14 @@ header {
     background-color: #b7c3ad; }
     header .navbar .container-fluid .navbar-brand .marca {
       color: #243a24; }
-    header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
-      font-size: 1.125rem;
-      font-weight: bold;
-      color: #244d24; }
-      header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
-        color: white; }
+    header .navbar .container-fluid .collapse {
+      flex-grow: 0; }
+      header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #244d24; }
+        header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
+          color: white; }
 
 /*-- ========================================= -- */
 /*--               BANNER                      --*/
@@ -104,24 +106,28 @@ header {
     flex-flow: row wrap;
     justify-content: left; }
     .portada .banner .wrap .box {
-      flex-basis: 50%;
-      color: #fff;
-      text-align: left;
+      flex-basis: 55%;
       align-self: center;
       padding-left: 50px; }
       .portada .banner .wrap .box .textoBanner1 {
         font-size: 18px;
         letter-spacing: 2px;
         color: #fff;
-        font-weight: bold; }
+        font-weight: bold;
+        text-align: left; }
       .portada .banner .wrap .box .textoBanner2 {
+        color: #fff;
         font-size: 1.7rem;
         line-height: 0.9;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        text-align: left;
+        font-weight: bold; }
       .portada .banner .wrap .box .textoBanner3 {
+        color: #fff;
         font-size: 0.9375rem;
         line-height: 1.2;
-        font-style: italic; }
+        font-style: italic;
+        text-align: left; }
 
 /*-- ========================================= --*/
 /*--                   FOOTER                  --*/
@@ -521,7 +527,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/portadaNosotros.webp); }
+  background-image: url(../../img/bannerBlog3.webp); }
 
 .contenedorBlog .intro {
   grid-area: zona1;
@@ -939,10 +945,22 @@ form .btn {
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA XL       --*/
 /*-- ========================================= --*/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   /* Capacitaciones.html */
   .contenedorCapacitaciones .portada .bannerCapacitaciones .wrap .box .botones {
     flex-flow: nowrap; } }
+
+/* ABOUT.HTML */
+.contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
+  padding: 0 15px; }
+
+.contenedorAbout .containerNosotros .box2 {
+  display: flex; }
+  .contenedorAbout .containerNosotros .box2 .columnaColor {
+    display: none; }
+
+.contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--parrafo {
+  padding: 0 15px; }
 
 /*-- ========================================= -- */
 /*--            MEDIA QUERYS PANTALLA L        --*/
@@ -951,15 +969,6 @@ form .btn {
   /* INDEX.HTML */
   .contenedorIndex .zona2 .equipo {
     flex-direction: column; }
-  /* ABOUT.HTML */
-  .contenedorAbout .containerNosotros .box1 .boxTexto .boxTexto--parrafo {
-    padding: 0 6.25rem; }
-  .contenedorAbout .containerNosotros .box2 {
-    display: flex; }
-    .contenedorAbout .containerNosotros .box2 .columnaColor {
-      display: none; }
-  .contenedorAbout .containerNosotros .box3 .boxTexto .boxTexto--parrafo {
-    padding: 0 6.25rem; }
   /* BLOG.HTML*/
   .contenedorBlog .contenidoBlog .contenedorDestacado {
     width: 50%; }
@@ -1117,11 +1126,6 @@ form .btn {
     .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
       font-size: 26px;
       line-height: 1.5; }
-    .contenedorIndex .portada .banner .wrap .box .textoBanner3,
-    .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3,
-    .contenedorAbout .portada .banner .wrap .box .textoBanner3,
-    .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
-      display: none; }
     .contenedorIndex .portada .banner .wrap .box .botones,
     .contenedorCapacitaciones .portada .banner .wrap .box .botones,
     .contenedorAbout .portada .banner .wrap .box .botones,
@@ -1165,31 +1169,36 @@ form .btn {
     font-size: 23px; }
   .contenedorIndex .destacado .capacitacionesColumna .carta .capacitacionesTexto .capacitacionesTitulo {
     font-size: 20px; }
-  /* CAPACITACIONES */
-  .contenedorCapacitaciones .portada .banner,
+  /* GENERALES */
+  .contenedorIndex .portada .banner, .contenedorCapacitaciones .portada .banner, .contenedorBlog .portada .banner, .contenedorAbout .portada .banner,
   .contenedorContacto .portada .banner {
     background-position: 60% 60%; }
-    .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1,
-    .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
-      font-size: 16px;
-      letter-spacing: 2px; }
-    .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2,
-    .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
-      font-size: 20px;
-      line-height: 1.5;
-      padding-bottom: 10px; }
-    .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3,
-    .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
-      display: none; }
-    .contenedorCapacitaciones .portada .banner .wrap .box .botones,
-    .contenedorContacto .portada .banner .wrap .box .botones {
-      flex-flow: wrap; }
+    .contenedorIndex .portada .banner .wrap .box, .contenedorCapacitaciones .portada .banner .wrap .box, .contenedorBlog .portada .banner .wrap .box, .contenedorAbout .portada .banner .wrap .box,
+    .contenedorContacto .portada .banner .wrap .box {
+      padding: 0 10px; }
+      .contenedorIndex .portada .banner .wrap .box .textoBanner1, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner1, .contenedorBlog .portada .banner .wrap .box .textoBanner1, .contenedorAbout .portada .banner .wrap .box .textoBanner1,
+      .contenedorContacto .portada .banner .wrap .box .textoBanner1 {
+        font-size: 16px;
+        letter-spacing: 2px; }
+      .contenedorIndex .portada .banner .wrap .box .textoBanner2, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner2, .contenedorBlog .portada .banner .wrap .box .textoBanner2, .contenedorAbout .portada .banner .wrap .box .textoBanner2,
+      .contenedorContacto .portada .banner .wrap .box .textoBanner2 {
+        font-size: 20px;
+        line-height: 1.5;
+        padding-bottom: 10px; }
+      .contenedorIndex .portada .banner .wrap .box .textoBanner3, .contenedorCapacitaciones .portada .banner .wrap .box .textoBanner3, .contenedorBlog .portada .banner .wrap .box .textoBanner3, .contenedorAbout .portada .banner .wrap .box .textoBanner3,
+      .contenedorContacto .portada .banner .wrap .box .textoBanner3 {
+        display: none; }
+      .contenedorIndex .portada .banner .wrap .box .botones, .contenedorCapacitaciones .portada .banner .wrap .box .botones, .contenedorBlog .portada .banner .wrap .box .botones, .contenedorAbout .portada .banner .wrap .box .botones,
+      .contenedorContacto .portada .banner .wrap .box .botones {
+        flex-flow: wrap; }
   /*BLOG.HTML*/
   .contenedorBlog .contenidoBlog .contenedorDestacado .textoDestacado {
     padding: 20px 10px; }
     .contenedorBlog .contenidoBlog .contenedorDestacado .textoDestacado .textoTitulo {
       font-size: 19px; }
   /* ABOUT.HTML */
+  .contenedorAbout .portada .banner .wrap .box .textoBanner2 {
+    display: none; }
   .contenedorAbout .containerNosotros .box1 .containerFoto .imagen {
     width: 320px; }
   .contenedorAbout .containerNosotros .box1 .containerFoto .divAraceli {
