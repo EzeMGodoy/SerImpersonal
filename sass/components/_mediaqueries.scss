@@ -359,6 +359,7 @@
 
   .contenedorIndex,
   .contenedorCapacitaciones,
+  .contenedorBlog,
   .contenedorAbout,
   .contenedorContacto {
     .portada {
@@ -366,6 +367,8 @@
         .wrap {
           .box {
             flex-basis: 100%;
+            padding: 0 35px;
+
             .textoBanner1 {
               font-size: 22px;
             }
@@ -374,21 +377,12 @@
               font-size: 26px;
               line-height: 1.5;
             }
+            .textoBanner--capacitaciones{
+              display: none;
+            }
             .botones {
               flex-flow: nowrap;
             }
-          }
-        }
-      }
-    }
-  }
-
-  .contenedorBlog {
-    .portada {
-      .banner {
-        .wrap {
-          .box {
-            flex-basis: 80%;
           }
         }
       }
@@ -494,7 +488,10 @@
 
   /* GENERALES */
 
-  .contenedorIndex, .contenedorCapacitaciones, .contenedorBlog, .contenedorAbout,
+  .contenedorIndex,
+  .contenedorCapacitaciones,
+  .contenedorBlog,
+  .contenedorAbout,
   .contenedorContacto {
     .portada {
       .banner {
@@ -542,11 +539,11 @@
   /* ABOUT.HTML */
 
   .contenedorAbout {
-    .portada{
-      .banner{
-        .wrap{
-          .box{
-            .textoBanner2{
+    .portada {
+      .banner {
+        .wrap {
+          .box {
+            .textoBanner2 {
               display: none;
             }
           }
