@@ -141,13 +141,13 @@ footer {
   justify-content: center;
   flex-wrap: wrap; }
   footer .derechos {
-    color: #f3f3f3;
+    color: darkgreen;
     text-align: center;
     padding: 10px 10px 0; }
   footer #iconos a .bi {
     font-size: 1.625rem;
     padding: 0 8px;
-    color: #f3f3f3; }
+    color: darkgreen; }
 
 /*     EXTENDS  */
 .contenedorIndex {
@@ -527,7 +527,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/bannerBlog3.webp); }
+  background-image: url(../../img/pexels-pixabay-355321.jpg); }
 
 .contenedorBlog .intro {
   grid-area: zona1;
