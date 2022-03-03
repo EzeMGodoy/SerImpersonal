@@ -527,7 +527,7 @@ form .btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/pexels-pixabay-355321.jpg); }
+  background-image: url(../img/bannerBlog.webp); }
 
 .contenedorBlog .intro {
   grid-area: zona1;
